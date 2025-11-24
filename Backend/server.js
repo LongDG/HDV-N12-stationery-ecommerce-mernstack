@@ -36,3 +36,16 @@ app.listen(PORT, () => {
   console.log(`Server đang chạy tại http://localhost:${PORT}`);
 });
 
+// server.js (hoặc app.js)
+
+// 1. Khai báo Mongoose và kết nối database
+// require('dotenv').config(); // Không cần thiết nếu bạn dùng đường dẫn cứng
+const connectDB = require('./config/database'); 
+
+connectDB(); // Gọi hàm để thực hiện kết nối
+
+// 2. Các logic ứng dụng khác bắt đầu từ đây...
+// Ví dụ:
+// const express = require('express');
+// const app = express();
+// ...

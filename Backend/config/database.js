@@ -1,26 +1,25 @@
-// Database Configuration
-// Cấu hình kết nối MongoDB
+// config/database.js
 
-// const mongoose = require('mongoose');
+const mongoose = require('mongoose');
 
-// const connectDB = async () => {
-//   try {
-//     const conn = await mongoose.connect(process.env.MONGODB_URI, {
-//       useNewUrlParser: true,
-//       useUnifiedTopology: true,
-//     });
+// Đường dẫn kết nối MongoDB local (mặc định)
+const MONGODB_URI_LOCAL = 'mongodb://localhost:27017/vanphongpham'; 
+// Thay 'ten_database_cua_ban' bằng tên database bạn muốn sử dụng
 
-//     console.log(`MongoDB Connected: ${conn.connection.host}`);
-//   } catch (error) {
-//     console.error(`Error: ${error.message}`);
-//     process.exit(1);
-//   }
-// };
+const connectDB = async () => {
+    try {
+        const conn = await mongoose.connect(MONGODB_URI_LOCAL, {
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
+            // Các tùy chọn 'useCreateIndex' và 'useFindAndModify' không cần thiết từ Mongoose 6 trở lên
+        });
 
-// module.exports = connectDB;
+        console.log(`MongoDB Connected: ${conn.connection.host}`);
+    } catch (error) {
+        console.error(`Error: ${error.message}`);
+        // Thoát process nếu kết nối thất bại
+        process.exit(1); 
+    }
+};
 
-// Uncomment và sử dụng khi đã cấu hình MongoDB
-// require('dotenv').config();
-// const connectDB = require('./config/database');
-// connectDB();
-
+module.exports = connectDB;

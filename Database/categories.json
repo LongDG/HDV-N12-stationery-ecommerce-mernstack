@@ -1,0 +1,26 @@
+{
+  "type": "Compass Connections",
+  "version": {
+    "$numberInt": "1"
+  },
+  "connections": [
+    {
+      "id": "acdd1d1d-c54b-4110-bc03-cf9c2636beed",
+      "lastUsed": {
+        "$date": {
+          "$numberLong": "1763944013855"
+        }
+      },
+      "favorite": {
+        "name": "QL_VanPhongPham"
+      },
+      "savedConnectionType": "recent",
+      "connectionOptions": {
+        "connectionString": "mongodb://localhost:27017/",
+        "oidc": {
+          "serializedState": "eyJvaWRjUGx1Z2luU3RhdGVWZXJzaW9uIjoxLCJzdGF0ZSI6W119"
+        }
+      }
+    }
+  ]
+}
