@@ -1,0 +1,84 @@
+[{
+  "_id": {
+    "$oid": "692403df27f5cc030ceca98b"
+  },
+  "name": "Bìa hồ sơ",
+  "parent_id": null
+},
+{
+  "_id": {
+    "$oid": "6924049527f5cc030ceca993"
+  },
+  "name": "Bút ký",
+  "parent_id": null
+},
+{
+  "_id": {
+    "$oid": "692404a027f5cc030ceca994"
+  },
+  "name": "Bút bi",
+  "parent_id": null
+},
+{
+  "_id": {
+    "$oid": "6924064b27f5cc030ceca995"
+  },
+  "name": "Sổ",
+  "parent_id": null
+},
+{
+  "_id": {
+    "$oid": "6924065327f5cc030ceca996"
+  },
+  "name": "Băng keo",
+  "parent_id": null
+},
+{
+  "_id": {
+    "$oid": "6924066627f5cc030ceca997"
+  },
+  "name": "Bảng tên - dây đeo",
+  "parent_id": null
+},
+{
+  "_id": {
+    "$oid": "6924069527f5cc030ceca998"
+  },
+  "name": "Bút chì gỗ ",
+  "parent_id": null
+},
+{
+  "_id": {
+    "$oid": "692406a227f5cc030ceca999"
+  },
+  "name": "Hóa đơn",
+  "parent_id": null
+},
+{
+  "_id": {
+    "$oid": "692406bb27f5cc030ceca99a"
+  },
+  "name": "Giấy các loại",
+  "parent_id": null
+},
+{
+  "_id": {
+    "$oid": "692406df27f5cc030ceca99b"
+  },
+  "name": "Bấm kim",
+  "parent_id": null
+},
+{
+  "_id": {
+    "$oid": "6924074227f5cc030ceca99c"
+  },
+  "name": "Máy tính",
+  "parent_id": null
+},
+{
+  "_id": {
+    "$oid": "6924074b27f5cc030ceca99d"
+  },
+  "name": "Thước",
+  "parent_id": null
+}]

@@ -1,0 +1,14 @@
+[{
+  "_id": {
+    "$oid": "69240b1127f5cc030ceca9c6"
+  },
+  "product_id": {
+    "$oid": "678113b41a2f3e4a6c000030"
+  },
+  "change_qty": 50,
+  "type": "import",
+  "note": "Nhập kho đợt 1",
+  "created_at": {
+    "$date": "2025-01-05T00:00:00.000Z"
+  }
+}]

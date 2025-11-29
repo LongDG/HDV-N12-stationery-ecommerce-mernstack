@@ -1,0 +1,496 @@
+[{
+  "_id": {
+    "$oid": "6924098427f5cc030ceca9ab"
+  },
+  "name": "Bút bi Thiên Long TL-08",
+  "sku": "TL08",
+  "category_id": {
+    "$oid": "692404a027f5cc030ceca994"
+  },
+  "supplier_id": {
+    "$oid": "6924084f27f5cc030ceca9a1"
+  },
+  "description": "Bút bi Thiên Long chất lượng cao",
+  "price": 5000,
+  "discount_percent": 10,
+  "status": 1,
+  "images": [
+    {
+      "url": "/images/but-bi-1.jpg",
+      "is_primary": true
+    },
+    {
+      "url": "/images/but-bi-2.jpg",
+      "is_primary": false
+    }
+  ],
+  "stock": 120,
+  "created_at": {
+    "$date": "2025-01-01T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6924113327f5cc030ceca9e4"
+  },
+  "name": "Bìa 6 ngăn nút cài",
+  "sku": "TL08",
+  "category_id": {
+    "$oid": "692403df27f5cc030ceca98b"
+  },
+  "supplier_id": {
+    "$oid": "6924084f27f5cc030ceca9a1"
+  },
+  "description": "Với thiết kế chia ngăn tiện lợi, bạn có thể sắp xếp và quản lý tài liệu một cách gọn gàng hơn, đồng thời giữ cho giấy tờ luôn phẳng phiu, không bị ẩm mốc. Bìa 6 ngăn là một trong những sản phẩm không thể thiếu của học sinh, sinh viên và đặc biệt là nhân viên văn phòng, giúp bạn lưu giữ hồ sơ gọn gàng và cẩn thận, đảm bảo giấy tờ không bị nhàu nát hay rơi rớt, mang lại hiệu quả sử dụng cao trong việc bảo quản tài liệu.",
+  "price": 45000,
+  "discount_percent": 10,
+  "status": 1,
+  "images": [
+    {
+      "url": "/images/but-bi-1.jpg",
+      "is_primary": true
+    },
+    {
+      "url": "/images/but-bi-2.jpg",
+      "is_primary": false
+    }
+  ],
+  "stock": 120,
+  "created_at": {
+    "$date": "2025-01-01T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6924119d27f5cc030ceca9e7"
+  },
+  "name": "Bìa Còng Nhẫn A4 – 20mm",
+  "sku": "TL08",
+  "category_id": {
+    "$oid": "692403df27f5cc030ceca98b"
+  },
+  "supplier_id": {
+    "$oid": "6924084f27f5cc030ceca9a1"
+  },
+  "description": " Thiết kế vừa vặn, hiện đại Kích thước vừa phải giúp giấy tờ được giữ gọn gàng, không bị nhăn, Có thể đóng mở nhiều lần để thêm bớt tài liệu mà không bị cong vênh. Sản phẩm có kích thước vừa phải, phù hợp với đa số các loại giấy tờ hiện nay.",
+  "price": 25000,
+  "discount_percent": 10,
+  "status": 1,
+  "images": [
+    {
+      "url": "/images/but-bi-1.jpg",
+      "is_primary": true
+    },
+    {
+      "url": "/images/but-bi-2.jpg",
+      "is_primary": false
+    }
+  ],
+  "stock": 120,
+  "created_at": {
+    "$date": "2025-01-01T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "692414c827f5cc030ceca9e8"
+  },
+  "name": "Bìa hộp đựng hồ sơ tài liệu ERAS",
+  "sku": "TL08",
+  "category_id": {
+    "$oid": "692403df27f5cc030ceca98b"
+  },
+  "supplier_id": {
+    "$oid": "6924084f27f5cc030ceca9a1"
+  },
+  "description": "Sản phẩm được làm từ nhựa PP có độ bền cao, không độc hại, thân thiện môi trường. Cấu tạo tiện lợi dễ sử dụng, luôn giữ hồ sơ, tài liệu phẵng phiu, sạch sẽ và tạo cảm giác thoải mái và dễ dàng khi sử dụng. Thiết kế màu sắc trang nhã lịch sự hiện đại sang trọng phù hợp với môi trường văn phòng",
+  "price": 90000,
+  "discount_percent": 10,
+  "status": 1,
+  "images": [
+    {
+      "url": "/images/but-bi-1.jpg",
+      "is_primary": true
+    },
+    {
+      "url": "/images/but-bi-2.jpg",
+      "is_primary": false
+    }
+  ],
+  "stock": 120,
+  "created_at": {
+    "$date": "2025-01-01T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6924175d27f5cc030ceca9e9"
+  },
+  "name": "Bìa lỗ A4 – 600g ",
+  "sku": "TL08",
+  "category_id": {
+    "$oid": "692403df27f5cc030ceca98b"
+  },
+  "supplier_id": {
+    "$oid": "6924084f27f5cc030ceca9a1"
+  },
+  "description": "Sản phẩm được làm bằng nhựa trong suốt gồm 11 lỗ nằm bên mép trái giúp lưu trữ chứng từ các khổ từ A4 trở xuống một cách dễ dàng. Chất lượng sản phẩm: mẫu mã đẹp, chất liệu nhựa tốt, độ dày cao. Quy cách: khổ A4 (24x31cm). 100 lá/1 xấp",
+  "price": 65000,
+  "discount_percent": 10,
+  "status": 1,
+  "images": [
+    {
+      "url": "/images/but-bi-1.jpg",
+      "is_primary": true
+    },
+    {
+      "url": "/images/but-bi-2.jpg",
+      "is_primary": false
+    }
+  ],
+  "stock": 120,
+  "created_at": {
+    "$date": "2025-01-01T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "692417db27f5cc030ceca9ea"
+  },
+  "name": "Bìa 20 Lá/ 40 Lá/60 Lá/80 lá Thiên Long, Bìa Nhựa Nhiều Lá Khổ A4",
+  "sku": "TL08",
+  "category_id": {
+    "$oid": "692403df27f5cc030ceca98b"
+  },
+  "supplier_id": {
+    "$oid": "6924084f27f5cc030ceca9a1"
+  },
+  "description": "Bìa giúp giữ giấy tờ được sạch sẽ, phù hợp với khổ giấy A4. Bạn có thể chứa đựng các tài liệu, hồ sơ, báo cáo, tranh ảnh, tạp chí. Gíup bảo quản hồ sơ được phẳng, sạch sẽ và dễ dàng sử dụng.",
+  "price": 75000,
+  "discount_percent": 10,
+  "status": 1,
+  "images": [
+    {
+      "url": "/images/but-bi-1.jpg",
+      "is_primary": true
+    },
+    {
+      "url": "/images/but-bi-2.jpg",
+      "is_primary": false
+    }
+  ],
+  "stock": 120,
+  "created_at": {
+    "$date": "2025-01-01T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6924187627f5cc030ceca9eb"
+  },
+  "name": "Bút ký Uni- Ball UB150 ( Loại 2)",
+  "sku": "TL08",
+  "category_id": {
+    "$oid": "6924049527f5cc030ceca993"
+  },
+  "supplier_id": {
+    "$oid": "6924084f27f5cc030ceca9a1"
+  },
+  "description": "Màu mực viết: xanh, Thân và nắp thiết kế thanh nhã, đi cùng màu mực. Màu mực tươi sáng, thấm nước không nhòe. Ngòi bút 0.5mm bằng hợp kim",
+  "price": 15000,
+  "discount_percent": 10,
+  "status": 1,
+  "images": [
+    {
+      "url": "/images/but-bi-1.jpg",
+      "is_primary": true
+    },
+    {
+      "url": "/images/but-bi-2.jpg",
+      "is_primary": false
+    }
+  ],
+  "stock": 120,
+  "created_at": {
+    "$date": "2025-01-01T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6924191627f5cc030ceca9ee"
+  },
+  "name": "Bút ký Uni-ball UB150 – CHÍNH HÃNG",
+  "sku": "TL08",
+  "category_id": {
+    "$oid": "6924049527f5cc030ceca993"
+  },
+  "supplier_id": {
+    "$oid": "6924084f27f5cc030ceca9a1"
+  },
+  "description": "Bút bi nước Uni-ball eye Micro UB150 nắp đậy, bút viết màu không màu xanh tươi sáng, không lem mực, không nhòe khi gặp nước. Màu mực viết: xanh Thân và nắp thiết kế thanh nhã, đi cùng màu mực. Màu mực tươi sáng, thấm nước không nhòe. Đầu bi Ø 0.5mm bằng hợp kim",
+  "price": 40000,
+  "discount_percent": 10,
+  "status": 1,
+  "images": [
+    {
+      "url": "/images/but-bi-1.jpg",
+      "is_primary": true
+    },
+    {
+      "url": "/images/but-bi-2.jpg",
+      "is_primary": false
+    }
+  ],
+  "stock": 120,
+  "created_at": {
+    "$date": "2025-01-01T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "692419ac27f5cc030ceca9ef"
+  },
+  "name": "Bút ký tên ZEBRA F301 loại 1 (Mực xanh)",
+  "sku": "TL08",
+  "category_id": {
+    "$oid": "6924049527f5cc030ceca993"
+  },
+  "supplier_id": {
+    "$oid": "6924084f27f5cc030ceca9a1"
+  },
+  "description": "Bút ký tên ZEBRA F.301 loại 1 được đánh giá cao về thiết kế và kiểu dáng. Sự phối hợp tinh tế giữa chất liệu kim loại sáng bóng và lớp bọc nhựa đồng màu với mực giúp tăng thêm phần nổi bật cho bút. Bút dạng bấm tiện lợi, sử dụng linh hoạt và tiện cho việc cất giữ. Phần tay cầm bọc nhựa êm và tránh trơn tuột ngay cả khi tay ra nhiều mồ hôi",
+  "price": 39000,
+  "discount_percent": 10,
+  "status": 1,
+  "images": [
+    {
+      "url": "/images/but-bi-1.jpg",
+      "is_primary": true
+    },
+    {
+      "url": "/images/but-bi-2.jpg",
+      "is_primary": false
+    }
+  ],
+  "stock": 120,
+  "created_at": {
+    "$date": "2025-01-01T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "692419ec27f5cc030ceca9f0"
+  },
+  "name": "Bút Ký VB 1061 BS – Tặng kèm ruột bút",
+  "sku": "TL08",
+  "category_id": {
+    "$oid": "6924049527f5cc030ceca993"
+  },
+  "supplier_id": {
+    "$oid": "6924084f27f5cc030ceca9a1"
+  },
+  "description": "Chất liệu : thép không gỉ, Ngòi bi, màu mực  Xanh. Phụ kiện kèm theo : Hộp Bút Enus Pen",
+  "price": 190000,
+  "discount_percent": 10,
+  "status": 1,
+  "images": [
+    {
+      "url": "/images/but-bi-1.jpg",
+      "is_primary": true
+    },
+    {
+      "url": "/images/but-bi-2.jpg",
+      "is_primary": false
+    }
+  ],
+  "stock": 120,
+  "created_at": {
+    "$date": "2025-01-01T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69241a8427f5cc030ceca9f1"
+  },
+  "name": "Bút Ký VR 2301 BK – Tặng kèm ruột bút",
+  "sku": "TL08",
+  "category_id": {
+    "$oid": "6924049527f5cc030ceca993"
+  },
+  "supplier_id": {
+    "$oid": "6924084f27f5cc030ceca9a1"
+  },
+  "description": "Chất liệu : thép không gỉ, Ngòi bi, màu mực  Xanh. Phụ kiện kèm theo : Hộp Bút Enus Pen",
+  "price": 190000,
+  "discount_percent": 10,
+  "status": 1,
+  "images": [
+    {
+      "url": "/images/but-bi-1.jpg",
+      "is_primary": true
+    },
+    {
+      "url": "/images/but-bi-2.jpg",
+      "is_primary": false
+    }
+  ],
+  "stock": 120,
+  "created_at": {
+    "$date": "2025-01-01T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69241edd27f5cc030ceca9f2"
+  },
+  "name": "Bút bi Double A – ALPINE BALL 0.7mm – Mực xanh (DBP-507-BG)",
+  "sku": "TL08",
+  "category_id": {
+    "$oid": "692404a027f5cc030ceca994"
+  },
+  "supplier_id": {
+    "$oid": "6924084f27f5cc030ceca9a1"
+  },
+  "description": "Bút bi Double A – ALPINE BALL 0.7mm – Mực xanh (DBP-507-BG)",
+  "price": 4000,
+  "discount_percent": 10,
+  "status": 1,
+  "images": [
+    {
+      "url": "/images/but-bi-1.jpg",
+      "is_primary": true
+    },
+    {
+      "url": "/images/but-bi-2.jpg",
+      "is_primary": false
+    }
+  ],
+  "stock": 120,
+  "created_at": {
+    "$date": "2025-01-01T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69241f8027f5cc030ceca9f9"
+  },
+  "name": "Ruột bút xoá kéo PLUS",
+  "sku": "TL08",
+  "category_id": {
+    "$oid": "692404a027f5cc030ceca994"
+  },
+  "supplier_id": {
+    "$oid": "6924084f27f5cc030ceca9a1"
+  },
+  "description": "CÁCH THAY THẾ RUỘT XOÁ: +Đẩy khoá trượt về chữ OPEN trên vỏ bút xoá để mở phần nắp nhựa +Lấy ruột băng xoá đã sử dụng ra. +Lau sạch vỏ băng xoá +Lắp ruột băng xoá mới vào +Đóng chặt nắp nhựa khớp với các chốt ở thân vỏ , đẩy khoá trượt về chữ LOCK. Ruột xoá kéo PLUS CÓ thiết kế nhỏ gọn, kiểu dáng phù hợp dùng cho loại bút xoá kéo Plus",
+  "price": 20000,
+  "discount_percent": 10,
+  "status": 1,
+  "images": [
+    {
+      "url": "/images/but-bi-1.jpg",
+      "is_primary": true
+    },
+    {
+      "url": "/images/but-bi-2.jpg",
+      "is_primary": false
+    }
+  ],
+  "stock": 120,
+  "created_at": {
+    "$date": "2025-01-01T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6924200f27f5cc030ceca9fa"
+  },
+  "name": "Hộp 20 Bút Bi Thiên Long TL036",
+  "sku": "TL08",
+  "category_id": {
+    "$oid": "692404a027f5cc030ceca994"
+  },
+  "supplier_id": {
+    "$oid": "6924084f27f5cc030ceca9a1"
+  },
+  "description": "Thân bút làm từ nhựa màu đục. Tai cài bút bằng kim loại mạ crom sáng bóng. Thân bút có đệm mềm giúp cầm êm tay và giảm trơn trượt khi viết. Thiết kế trẻ trung kiểu dáng mạnh mẽ",
+  "price": 220000,
+  "discount_percent": 10,
+  "status": 1,
+  "images": [
+    {
+      "url": "/images/but-bi-1.jpg",
+      "is_primary": true
+    },
+    {
+      "url": "/images/but-bi-2.jpg",
+      "is_primary": false
+    }
+  ],
+  "stock": 120,
+  "created_at": {
+    "$date": "2025-01-01T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "692420a927f5cc030ceca9fb"
+  },
+  "name": "Bút Bi Thiên Long TL-031",
+  "sku": "TL08",
+  "category_id": {
+    "$oid": "692404a027f5cc030ceca994"
+  },
+  "supplier_id": {
+    "$oid": "6924084f27f5cc030ceca9a1"
+  },
+  "description": "Giắt bút vòng bằng kim loại, nút xi kim loai sáng bóng.Độ dài viết được: 1.400-1.800m.Đầu bi nhỏ cho nét chữ thanh mảnh.Kiểu dáng  rất hiện đại, sang trọng phù hợp cho sinh viên,giáo viên và nhân viên văn phòng. Màu Mực: xanh",
+  "price": 9000,
+  "discount_percent": 10,
+  "status": 1,
+  "images": [
+    {
+      "url": "/images/but-bi-1.jpg",
+      "is_primary": true
+    },
+    {
+      "url": "/images/but-bi-2.jpg",
+      "is_primary": false
+    }
+  ],
+  "stock": 120,
+  "created_at": {
+    "$date": "2025-01-01T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "692420bd27f5cc030ceca9fc"
+  },
+  "name": "Bút bi Thiên Long TL-095 ngòi 0.5mm – Mực xanh",
+  "sku": "TL08",
+  "category_id": {
+    "$oid": "692404a027f5cc030ceca994"
+  },
+  "supplier_id": {
+    "$oid": "6924084f27f5cc030ceca9a1"
+  },
+  "description": "Bút tự động thu ngòi khi cài vào túi áo. Có thể cài vào bìa sổ dày 3 mm. Bút bi dạng bấm cò, đầu bi nhỏ cho nét chữ thanh mảnh. Viết rất trơn, êm, mực ra đều, liên tục. Kiểu dáng hiện đại, phần tay cầm có đệm cao su mềm giúp cầm bút rất thoải mái. Đóng gói: 20 cây/ hộp. Bảo quản: Không thích hợp cho trẻ dưới 3 tuổi. Bảo quản nơi khô ráo, thoáng mát, tuyệt đối tránh xa nguồn nhiệt, hóa chất.",
+  "price": 8000,
+  "discount_percent": 10,
+  "status": 1,
+  "images": [
+    {
+      "url": "/images/but-bi-1.jpg",
+      "is_primary": true
+    },
+    {
+      "url": "/images/but-bi-2.jpg",
+      "is_primary": false
+    }
+  ],
+  "stock": 120,
+  "created_at": {
+    "$date": "2025-01-01T00:00:00.000Z"
+  }
+}]
