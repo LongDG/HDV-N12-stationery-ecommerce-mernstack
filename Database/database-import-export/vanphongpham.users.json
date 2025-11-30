@@ -1,0 +1,32 @@
+[{
+  "_id": {
+    "$oid": "6924023b27f5cc030ceca979"
+  },
+  "name": "Phan Dang Khoa",
+  "email": "khoa@gmail.com",
+  "phone": "0123456789",
+  "password": "123456",
+  "address": "Long Duc, Vinh Long",
+  "role_id": {
+    "$oid": "6923ee30a762f95c92171e55"
+  },
+  "created_at": {
+    "$date": "2025-01-01T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6924039127f5cc030ceca989"
+  },
+  "name": "Ho Hoang Long",
+  "email": "L@gmail.com",
+  "phone": "0123456788",
+  "password": "123456",
+  "address": "Long Duc, Vinh Long",
+  "role_id": {
+    "$oid": "6923ee30a762f95c92171e55"
+  },
+  "created_at": {
+    "$date": "2025-01-01T00:00:00.000Z"
+  }
+}]

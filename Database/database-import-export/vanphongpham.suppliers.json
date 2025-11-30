@@ -1,0 +1,18 @@
+[{
+  "_id": {
+    "$oid": "6924084f27f5cc030ceca9a1"
+  },
+  "name": "Thiên Long",
+  "email": "info@tl.com",
+  "phone": "0901234567",
+  "address": "Bình Thạnh, HCM"
+},
+{
+  "_id": {
+    "$oid": "6924086127f5cc030ceca9a2"
+  },
+  "name": "Hồng Hà",
+  "email": "hh@company.com",
+  "phone": "0912345678",
+  "address": "Hoàn Kiếm, Hà Nội"
+}]
