@@ -21,7 +21,20 @@ const userSchema = new mongoose.Schema({
     minlength: [6, 'Mật khẩu phải có ít nhất 6 ký tự'],
     select: false
   },
-  createdAt: {
+  phone: {
+    type: String,
+    trim: true
+  },
+  address: {
+    type: String,
+    trim: true
+  },
+  role: {
+    type: String,
+    enum: ['admin', 'staff', 'customer'],
+    default: 'customer'
+  },
+  created_at: {
     type: Date,
     default: Date.now
   }

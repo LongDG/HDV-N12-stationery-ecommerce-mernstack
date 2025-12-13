@@ -1,0 +1,303 @@
+###=== AUTH APIs ===###
+
+### Register
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "Test User",
+  "email": "test@example.com",
+  "password": "123456",
+  "phone": "0123456789",
+  "address": "123 Test Street",
+  "role": "customer"
+}
+
+### Login
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "test@example.com",
+  "password": "123456"
+}
+
+### Get All Users
+GET http://localhost:5000/api/auth/users
+
+### Get User By ID
+GET http://localhost:5000/api/auth/users/675c0c3ff93f28e6c4aa0d0e
+
+### Update User
+PUT http://localhost:5000/api/auth/users/675c0c3ff93f28e6c4aa0d0e
+Content-Type: application/json
+
+{
+  "name": "Updated Name",
+  "phone": "0999999999"
+}
+
+### Delete User
+DELETE http://localhost:5000/api/auth/users/675c0c3ff93f28e6c4aa0d0e
+
+###=== CATEGORY APIs ===###
+
+### Get All Categories
+GET http://localhost:5000/api/categories
+
+### Get Category By ID
+GET http://localhost:5000/api/categories/YOUR_CATEGORY_ID
+
+### Create Category
+POST http://localhost:5000/api/categories
+Content-Type: application/json
+
+{
+  "name": "Bút viết",
+  "parent_id": null
+}
+
+### Update Category
+PUT http://localhost:5000/api/categories/YOUR_CATEGORY_ID
+Content-Type: application/json
+
+{
+  "name": "Bút viết cao cấp"
+}
+
+### Delete Category
+DELETE http://localhost:5000/api/categories/YOUR_CATEGORY_ID
+
+###=== SUPPLIER APIs ===###
+
+### Get All Suppliers
+GET http://localhost:5000/api/suppliers
+
+### Get Supplier By ID
+GET http://localhost:5000/api/suppliers/YOUR_SUPPLIER_ID
+
+### Create Supplier
+POST http://localhost:5000/api/suppliers
+Content-Type: application/json
+
+{
+  "name": "Công ty Thiên Long",
+  "email": "contact@thienlong.com",
+  "phone": "0281234567",
+  "address": "123 Đường ABC, Q1, HCM"
+}
+
+### Update Supplier
+PUT http://localhost:5000/api/suppliers/YOUR_SUPPLIER_ID
+Content-Type: application/json
+
+{
+  "phone": "0281234999"
+}
+
+### Delete Supplier
+DELETE http://localhost:5000/api/suppliers/YOUR_SUPPLIER_ID
+
+###=== PRODUCT APIs ===###
+
+### Get All Products
+GET http://localhost:5000/api/products
+
+### Get All Products with filters
+GET http://localhost:5000/api/products?search=bút&minPrice=1000&maxPrice=10000&status=true&page=1&limit=10
+
+### Get Product By ID
+GET http://localhost:5000/api/products/YOUR_PRODUCT_ID
+
+### Create Product
+POST http://localhost:5000/api/products
+Content-Type: application/json
+
+{
+  "name": "Bút bi Thiên Long TL-079",
+  "sku": "TL079",
+  "description": "Bút bi cao cấp, mực xanh",
+  "price": 5000,
+  "discount_percent": 10,
+  "images": ["https://example.com/image1.jpg"],
+  "stock": 100,
+  "category_id": "YOUR_CATEGORY_ID",
+  "supplier_id": "YOUR_SUPPLIER_ID",
+  "status": true
+}
+
+### Update Product
+PUT http://localhost:5000/api/products/YOUR_PRODUCT_ID
+Content-Type: application/json
+
+{
+  "price": 4500,
+  "discount_percent": 15,
+  "stock": 150
+}
+
+### Update Product Stock
+PATCH http://localhost:5000/api/products/YOUR_PRODUCT_ID/stock
+Content-Type: application/json
+
+{
+  "stock": 200
+}
+
+### Delete Product
+DELETE http://localhost:5000/api/products/YOUR_PRODUCT_ID
+
+###=== INVENTORY APIs ===###
+
+### Get All Inventories
+GET http://localhost:5000/api/inventories
+
+### Get Inventory By Product
+GET http://localhost:5000/api/inventories/product/YOUR_PRODUCT_ID
+
+### Create Inventory - Import
+POST http://localhost:5000/api/inventories
+Content-Type: application/json
+
+{
+  "product_id": "YOUR_PRODUCT_ID",
+  "type": "import",
+  "change_qty": 50,
+  "note": "Nhập hàng từ nhà cung cấp"
+}
+
+### Create Inventory - Export
+POST http://localhost:5000/api/inventories
+Content-Type: application/json
+
+{
+  "product_id": "YOUR_PRODUCT_ID",
+  "type": "export",
+  "change_qty": 10,
+  "note": "Xuất hàng cho đơn #123"
+}
+
+### Delete Inventory
+DELETE http://localhost:5000/api/inventories/YOUR_INVENTORY_ID
+
+###=== ORDER APIs ===###
+
+### Get All Orders
+GET http://localhost:5000/api/orders
+
+### Get Orders with filters
+GET http://localhost:5000/api/orders?status=pending&page=1&limit=10
+
+### Get Order By ID
+GET http://localhost:5000/api/orders/YOUR_ORDER_ID
+
+### Create Order
+POST http://localhost:5000/api/orders
+Content-Type: application/json
+
+{
+  "user_id": "675c0c3ff93f28e6c4aa0d0e",
+  "items": [
+    {
+      "product_id": "6924098427f5cc030ceca9ab",
+      "name": "Bút bi Thiên Long TL-08",
+      "quantity": 5,
+      "price": 5000
+    }
+  ],
+  "total_price": 25000,
+  "shipping_address": "123 Nguyễn Trãi, Q1, TP.HCM"
+}
+
+### Update Order
+PUT http://localhost:5000/api/orders/YOUR_ORDER_ID
+Content-Type: application/json
+
+{
+  "shipping_address": "456 Lê Lợi, Q1, TP.HCM"
+}
+
+### Update Order Status
+PATCH http://localhost:5000/api/orders/YOUR_ORDER_ID/status
+Content-Type: application/json
+
+{
+  "status": "processing"
+}
+
+### Delete Order
+DELETE http://localhost:5000/api/orders/YOUR_ORDER_ID
+
+###=== PAYMENT APIs ===###
+
+### Get All Payments
+GET http://localhost:5000/api/payments
+
+### Get Payment By Order
+GET http://localhost:5000/api/payments/order/YOUR_ORDER_ID
+
+### Get Payments By User
+GET http://localhost:5000/api/payments/user/YOUR_USER_ID
+
+### Create Payment
+POST http://localhost:5000/api/payments
+Content-Type: application/json
+
+{
+  "order_id": "YOUR_ORDER_ID",
+  "user_id": "YOUR_USER_ID",
+  "payment_method": "momo",
+  "amount": 25000,
+  "transaction_code": "MOMO123456789",
+  "note": "Thanh toán qua Momo"
+}
+
+### Update Payment Status
+PUT http://localhost:5000/api/payments/YOUR_PAYMENT_ID
+Content-Type: application/json
+
+{
+  "status": "completed"
+}
+
+### Delete Payment
+DELETE http://localhost:5000/api/payments/YOUR_PAYMENT_ID
+
+###=== CART APIs ===###
+
+### Get Cart (Xem giỏ hàng) - Cách 1: Dùng query parameter
+GET http://localhost:5000/api/cart?user_id=6924023b27f5cc030ceca979
+
+### Get Cart (Xem giỏ hàng) - Cách 2: Dùng header
+GET http://localhost:5000/api/cart
+x-user-id: 6924023b27f5cc030ceca979
+
+### Add to Cart (Thêm vào giỏ)
+POST http://localhost:5000/api/cart
+Content-Type: application/json
+
+{
+  "user_id": "6924023b27f5cc030ceca979",
+  "product_id": "6924098427f5cc030ceca9ab",
+  "quantity": 2
+}
+
+### Update Cart Item (Cập nhật số lượng)
+PUT http://localhost:5000/api/cart/6924098427f5cc030ceca9ab
+Content-Type: application/json
+
+{
+  "user_id": "6924023b27f5cc030ceca979",
+  "quantity": 5
+}
+
+### Remove Cart Item (Xóa 1 sản phẩm)
+DELETE http://localhost:5000/api/cart/6924098427f5cc030ceca9ab?user_id=6924023b27f5cc030ceca979
+
+### Clear Cart (Xóa toàn bộ giỏ)
+DELETE http://localhost:5000/api/cart?user_id=6924023b27f5cc030ceca979
+
+###=== STATISTICS APIs ===###
+
+### Get Statistics
+GET http://localhost:5000/api/statistics
