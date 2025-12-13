@@ -1,36 +1,5 @@
 [{
   "_id": {
-    "$oid": "6924098427f5cc030ceca9ab"
-  },
-  "name": "Bút bi Thiên Long TL-08",
-  "sku": "TL08",
-  "category_id": {
-    "$oid": "692404a027f5cc030ceca994"
-  },
-  "supplier_id": {
-    "$oid": "6924084f27f5cc030ceca9a1"
-  },
-  "description": "Bút bi Thiên Long chất lượng cao",
-  "price": 5000,
-  "discount_percent": 10,
-  "status": 1,
-  "images": [
-    {
-      "url": "/images/but-bi-1.jpg",
-      "is_primary": true
-    },
-    {
-      "url": "/images/but-bi-2.jpg",
-      "is_primary": false
-    }
-  ],
-  "stock": 120,
-  "created_at": {
-    "$date": "2025-01-01T00:00:00.000Z"
-  }
-},
-{
-  "_id": {
     "$oid": "6924113327f5cc030ceca9e4"
   },
   "name": "Bìa 6 ngăn nút cài",
@@ -45,16 +14,7 @@
   "price": 45000,
   "discount_percent": 10,
   "status": 1,
-  "images": [
-    {
-      "url": "/images/but-bi-1.jpg",
-      "is_primary": true
-    },
-    {
-      "url": "/images/but-bi-2.jpg",
-      "is_primary": false
-    }
-  ],
+  "images": "\/images\/1-Bia\/Bìa 6 ngăn nút cài.jpg",
   "stock": 120,
   "created_at": {
     "$date": "2025-01-01T00:00:00.000Z"
@@ -76,16 +36,7 @@
   "price": 25000,
   "discount_percent": 10,
   "status": 1,
-  "images": [
-    {
-      "url": "/images/but-bi-1.jpg",
-      "is_primary": true
-    },
-    {
-      "url": "/images/but-bi-2.jpg",
-      "is_primary": false
-    }
-  ],
+  "images": "\/images\/1-Bia\/Bìa Còng Nhẫn A4 – 20mm.jpg",
   "stock": 120,
   "created_at": {
     "$date": "2025-01-01T00:00:00.000Z"
@@ -107,16 +58,7 @@
   "price": 90000,
   "discount_percent": 10,
   "status": 1,
-  "images": [
-    {
-      "url": "/images/but-bi-1.jpg",
-      "is_primary": true
-    },
-    {
-      "url": "/images/but-bi-2.jpg",
-      "is_primary": false
-    }
-  ],
+  "images": "[object Object],[object Object]",
   "stock": 120,
   "created_at": {
     "$date": "2025-01-01T00:00:00.000Z"
@@ -138,16 +80,7 @@
   "price": 65000,
   "discount_percent": 10,
   "status": 1,
-  "images": [
-    {
-      "url": "/images/but-bi-1.jpg",
-      "is_primary": true
-    },
-    {
-      "url": "/images/but-bi-2.jpg",
-      "is_primary": false
-    }
-  ],
+  "images": "[object Object],[object Object]",
   "stock": 120,
   "created_at": {
     "$date": "2025-01-01T00:00:00.000Z"
@@ -169,16 +102,7 @@
   "price": 75000,
   "discount_percent": 10,
   "status": 1,
-  "images": [
-    {
-      "url": "/images/but-bi-1.jpg",
-      "is_primary": true
-    },
-    {
-      "url": "/images/but-bi-2.jpg",
-      "is_primary": false
-    }
-  ],
+  "images": "[object Object],[object Object]",
   "stock": 120,
   "created_at": {
     "$date": "2025-01-01T00:00:00.000Z"
@@ -200,16 +124,7 @@
   "price": 15000,
   "discount_percent": 10,
   "status": 1,
-  "images": [
-    {
-      "url": "/images/but-bi-1.jpg",
-      "is_primary": true
-    },
-    {
-      "url": "/images/but-bi-2.jpg",
-      "is_primary": false
-    }
-  ],
+  "images": "[object Object],[object Object]",
   "stock": 120,
   "created_at": {
     "$date": "2025-01-01T00:00:00.000Z"
@@ -231,16 +146,7 @@
   "price": 40000,
   "discount_percent": 10,
   "status": 1,
-  "images": [
-    {
-      "url": "/images/but-bi-1.jpg",
-      "is_primary": true
-    },
-    {
-      "url": "/images/but-bi-2.jpg",
-      "is_primary": false
-    }
-  ],
+  "images": "[object Object],[object Object]",
   "stock": 120,
   "created_at": {
     "$date": "2025-01-01T00:00:00.000Z"
@@ -262,16 +168,7 @@
   "price": 39000,
   "discount_percent": 10,
   "status": 1,
-  "images": [
-    {
-      "url": "/images/but-bi-1.jpg",
-      "is_primary": true
-    },
-    {
-      "url": "/images/but-bi-2.jpg",
-      "is_primary": false
-    }
-  ],
+  "images": "[object Object],[object Object]",
   "stock": 120,
   "created_at": {
     "$date": "2025-01-01T00:00:00.000Z"
@@ -293,16 +190,7 @@
   "price": 190000,
   "discount_percent": 10,
   "status": 1,
-  "images": [
-    {
-      "url": "/images/but-bi-1.jpg",
-      "is_primary": true
-    },
-    {
-      "url": "/images/but-bi-2.jpg",
-      "is_primary": false
-    }
-  ],
+  "images": "[object Object],[object Object]",
   "stock": 120,
   "created_at": {
     "$date": "2025-01-01T00:00:00.000Z"
@@ -324,16 +212,7 @@
   "price": 190000,
   "discount_percent": 10,
   "status": 1,
-  "images": [
-    {
-      "url": "/images/but-bi-1.jpg",
-      "is_primary": true
-    },
-    {
-      "url": "/images/but-bi-2.jpg",
-      "is_primary": false
-    }
-  ],
+  "images": "[object Object],[object Object]",
   "stock": 120,
   "created_at": {
     "$date": "2025-01-01T00:00:00.000Z"
@@ -355,16 +234,7 @@
   "price": 4000,
   "discount_percent": 10,
   "status": 1,
-  "images": [
-    {
-      "url": "/images/but-bi-1.jpg",
-      "is_primary": true
-    },
-    {
-      "url": "/images/but-bi-2.jpg",
-      "is_primary": false
-    }
-  ],
+  "images": "[object Object],[object Object]",
   "stock": 120,
   "created_at": {
     "$date": "2025-01-01T00:00:00.000Z"
@@ -386,16 +256,7 @@
   "price": 20000,
   "discount_percent": 10,
   "status": 1,
-  "images": [
-    {
-      "url": "/images/but-bi-1.jpg",
-      "is_primary": true
-    },
-    {
-      "url": "/images/but-bi-2.jpg",
-      "is_primary": false
-    }
-  ],
+  "images": "[object Object],[object Object]",
   "stock": 120,
   "created_at": {
     "$date": "2025-01-01T00:00:00.000Z"
@@ -417,16 +278,7 @@
   "price": 220000,
   "discount_percent": 10,
   "status": 1,
-  "images": [
-    {
-      "url": "/images/but-bi-1.jpg",
-      "is_primary": true
-    },
-    {
-      "url": "/images/but-bi-2.jpg",
-      "is_primary": false
-    }
-  ],
+  "images": "[object Object],[object Object]",
   "stock": 120,
   "created_at": {
     "$date": "2025-01-01T00:00:00.000Z"
@@ -448,16 +300,7 @@
   "price": 9000,
   "discount_percent": 10,
   "status": 1,
-  "images": [
-    {
-      "url": "/images/but-bi-1.jpg",
-      "is_primary": true
-    },
-    {
-      "url": "/images/but-bi-2.jpg",
-      "is_primary": false
-    }
-  ],
+  "images": "[object Object],[object Object]",
   "stock": 120,
   "created_at": {
     "$date": "2025-01-01T00:00:00.000Z"
@@ -479,16 +322,7 @@
   "price": 8000,
   "discount_percent": 10,
   "status": 1,
-  "images": [
-    {
-      "url": "/images/but-bi-1.jpg",
-      "is_primary": true
-    },
-    {
-      "url": "/images/but-bi-2.jpg",
-      "is_primary": false
-    }
-  ],
+  "images": "[object Object],[object Object]",
   "stock": 120,
   "created_at": {
     "$date": "2025-01-01T00:00:00.000Z"
