@@ -100,3 +100,10 @@ Frontend sẽ chạy tại: http://localhost:3000
 - Frontend sử dụng React Router để điều hướng
 - Proxy đã được cấu hình trong Frontend để kết nối với Backend API
 
+## Lệnh bỏ đường dẫn ảnh vào CSDL MongoDB trong file vanphongpham.products.json
+
+Sau đây là 1 Ví dụ:   "images": "[object Object],[object Object]", // chưa có đường dẫn
+
+Ta thay bằng:   "images": "\/images\/Clean Architecture.webp",      // có đường dẫn ảnh .webp
+
+Hoặc bằng:   "images": "\/images\/Clean Architecture.jpg",      // có đường dẫn ảnh .jpg
