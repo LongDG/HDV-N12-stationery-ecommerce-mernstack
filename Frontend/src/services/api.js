@@ -28,19 +28,22 @@ api.interceptors.request.use(
 
 // Response interceptor
 api.interceptors.response.use(
-  (response) => {
-    return response;
-  },
+  (response) => response,
   (error) => {
-    // Xử lý lỗi
     if (error.response?.status === 401) {
-      // Xử lý khi không có quyền
       localStorage.removeItem('token');
-      window.location.href = '/login';
+      window.location.href = '/auth';
     }
     return Promise.reject(error);
   }
 );
+
+// Auth endpoints
+export const authService = {
+  login: (email, password) => api.post('/auth/login', { email, password }),
+  register: (payload) => api.post('/auth/register', payload),
+  me: () => api.get('/auth/me'),
+};
 
 export default api;
 

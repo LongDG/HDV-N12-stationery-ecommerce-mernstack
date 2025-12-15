@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import { authService } from '../services/api';
 import './Auth.css';
 
 const Auth = () => {
@@ -50,10 +50,7 @@ const Auth = () => {
     if (isLogin) {
       // Đăng nhập
       try {
-        const response = await axios.post('/api/auth/login', {
-          email: formData.email,
-          password: formData.password
-        });
+        const response = await authService.login(formData.email, formData.password);
         
         if (response.data.success) {
           localStorage.setItem('token', response.data.token);
@@ -82,7 +79,7 @@ const Auth = () => {
 
       try {
         const { confirmPassword, ...registerData } = formData;
-        const response = await axios.post('/api/auth/register', registerData);
+        const response = await authService.register(registerData);
         
         if (response.data.success) {
           localStorage.setItem('token', response.data.token);

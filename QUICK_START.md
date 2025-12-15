@@ -69,7 +69,7 @@ Backend sẽ chạy tại: **http://localhost:5000**
 - Port: 5000
 
 ### 4. Test ứng dụng
-
+ư
 1. Mở trình duyệt và truy cập: http://localhost:3000
 2. Click vào "Đăng nhập / Đăng ký" ở header
 3. Test chức năng đăng ký/đăng nhập
