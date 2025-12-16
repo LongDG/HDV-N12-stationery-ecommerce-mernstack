@@ -63,22 +63,8 @@
 },
 {
   "_id": {
-    "$oid": "692406df27f5cc030ceca99b"
-  },
-  "name": "Bấm kim",
-  "parent_id": null
-},
-{
-  "_id": {
     "$oid": "6924074227f5cc030ceca99c"
   },
   "name": "Máy tính",
-  "parent_id": null
-},
-{
-  "_id": {
-    "$oid": "6924074b27f5cc030ceca99d"
-  },
-  "name": "Thước",
   "parent_id": null
 }]
