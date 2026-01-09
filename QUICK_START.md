@@ -6,7 +6,7 @@ Frontend đang chạy tại: **http://localhost:3000**
 
 ### Lệnh chạy Frontend:
 ```bash
-# Ở thư mục Frontend
+
 npm start
 ```
 
