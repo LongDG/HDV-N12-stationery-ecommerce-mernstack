@@ -52,6 +52,8 @@ services:
       - backend
     networks:
       - hdv-network
+    volumes:
+      - ./images:/usr/share/nginx/images:ro
 
 networks:
   hdv-network:

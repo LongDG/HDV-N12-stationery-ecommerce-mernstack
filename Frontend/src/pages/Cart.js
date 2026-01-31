@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { CartContext } from '../context/CartContext';
 import { AuthContext } from '../context/AuthContext';
+import { getProductImage } from '../utils/imageHelper';
 
 const Cart = () => {
   const { cartItems, total, loading, updateCartItem, removeFromCart } = useContext(CartContext);
@@ -12,25 +13,22 @@ const Cart = () => {
     return new Intl.NumberFormat('vi-VN').format(price) + '₫';
   };
 
-  const handleUpdateQuantity = async (itemId, action) => {
-    const item = cartItems.find(i => i._id === itemId);
-    if (!item) return;
-    
-    let newQuantity = item.quantity;
+  const handleUpdateQuantity = async (productId, action, currentQuantity) => {
+    let newQuantity = currentQuantity;
     if (action === 'increase') {
       newQuantity += 1;
-    } else if (action === 'decrease' && item.quantity > 1) {
+    } else if (action === 'decrease' && currentQuantity > 1) {
       newQuantity -= 1;
     }
     
-    if (newQuantity !== item.quantity) {
-      await updateCartItem(itemId, newQuantity);
+    if (newQuantity !== currentQuantity) {
+      await updateCartItem(productId, newQuantity);
     }
   };
 
-  const handleRemoveItem = async (itemId) => {
+  const handleRemoveItem = async (productId) => {
     if (window.confirm('Bạn có chắc muốn xóa sản phẩm này?')) {
-      await removeFromCart(itemId);
+      await removeFromCart(productId);
     }
   };
 
@@ -83,10 +81,10 @@ const Cart = () => {
                   {/* Product Info */}
                   <div className="col-span-12 md:col-span-6 flex items-center space-x-4">
                     <div className="w-20 h-20 bg-gray-100 flex-shrink-0 rounded overflow-hidden">
-                      {item.product?.image ? (
+                      {getProductImage(item.product) ? (
                         <img 
-                          src={item.product.image} 
-                          alt={item.product.name}
+                          src={getProductImage(item.product)} 
+                          alt={item.product?.name}
                           className="w-full h-full object-cover"
                         />
                       ) : (
@@ -129,7 +127,7 @@ const Cart = () => {
                       <span className="md:hidden text-sm text-gray-600 block mb-1">Số lượng:</span>
                       <div className="flex items-center space-x-2">
                         <button 
-                          onClick={() => handleUpdateQuantity(item._id, 'decrease')}
+                          onClick={() => handleUpdateQuantity(item.product?._id, 'decrease', item.quantity)}
                           className="w-8 h-8 border-2 border-gray-900 hover:bg-gray-900 hover:text-white transition-all rounded"
                         >
                           −
@@ -140,7 +138,7 @@ const Cart = () => {
                         </span>
                         
                         <button 
-                          onClick={() => handleUpdateQuantity(item._id, 'increase')}
+                          onClick={() => handleUpdateQuantity(item.product?._id, 'increase', item.quantity)}
                           className="w-8 h-8 border-2 border-gray-900 hover:bg-gray-900 hover:text-white transition-all rounded"
                         >
                           +
@@ -162,7 +160,7 @@ const Cart = () => {
                   {/* Remove Button (Mobile) */}
                   <div className="col-span-12 mt-4">
                     <button 
-                      onClick={() => handleRemoveItem(item._id)}
+                      onClick={() => handleRemoveItem(item.product?._id)}
                       className="w-full md:w-auto px-4 py-2 border border-red-600 text-red-600 hover:bg-red-600 hover:text-white transition-all rounded"
                     >
                       XÓA

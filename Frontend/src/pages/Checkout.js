@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { CartContext } from '../context/CartContext';
 import { AuthContext } from '../context/AuthContext';
 import orderService from '../services/orderService';
+import { getProductImage } from '../utils/imageHelper';
 
 const Checkout = () => {
   const { cartItems, total, clearCart } = useContext(CartContext);
@@ -334,10 +335,10 @@ const Checkout = () => {
                 {cartItems.map((item) => (
                   <div key={item._id} className="flex items-center space-x-4">
                     <div className="w-16 h-16 bg-gray-100 flex-shrink-0 rounded overflow-hidden">
-                      {item.product?.image ? (
+                      {getProductImage(item.product) ? (
                         <img 
-                          src={item.product.image} 
-                          alt={item.product.name}
+                          src={getProductImage(item.product)} 
+                          alt={item.product?.name}
                           className="w-full h-full object-cover"
                         />
                       ) : (

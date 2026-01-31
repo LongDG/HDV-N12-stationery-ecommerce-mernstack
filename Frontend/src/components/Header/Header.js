@@ -104,7 +104,7 @@ const Header = () => {
                     {isUserMenuOpen && (
                       <div className="absolute right-0 mt-2 w-64 bg-white border-2 border-gray-900 shadow-xl z-50 rounded-lg overflow-hidden">
                         <div className="p-4 border-b border-gray-200 bg-gray-50">
-                          <div className="font-bold text-gray-900">{user.full_name || user.username}</div>
+                          <div className="font-bold text-gray-900">{user.name || user.full_name || user.username}</div>
                           <div className="text-sm text-gray-600">{user.email}</div>
                           {user.role === 'admin' && (
                             <span className="inline-block mt-1 px-2 py-0.5 bg-red-100 text-red-700 text-xs rounded font-medium">Admin</span>

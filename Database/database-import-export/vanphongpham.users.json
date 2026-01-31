@@ -2,14 +2,12 @@
   "_id": {
     "$oid": "6924023b27f5cc030ceca979"
   },
-  "name": "Phan Dang Khoa",
-  "email": "khoa@gmail.com",
+  "name": "Admin",
+  "email": "admin@gmail.com",
   "phone": "0123456789",
-  "password": "123456",
-  "address": "Long Duc, Vinh Long",
-  "role_id": {
-    "$oid": "6923ee30a762f95c92171e55"
-  },
+  "password": "$2a$10$v646TVB9pP9w6xRbEnP2y.MD2Xdmq4uyEgA9MdvQ0zY8Zpx0WdM9e",
+  "address": "123 Admin Street, Ho Chi Minh City",
+  "role": "admin",
   "created_at": {
     "$date": "2025-01-01T00:00:00.000Z"
   }
@@ -18,14 +16,12 @@
   "_id": {
     "$oid": "6924039127f5cc030ceca989"
   },
-  "name": "Ho Hoang Long",
-  "email": "L@gmail.com",
+  "name": "Nguyen Van A",
+  "email": "user@gmail.com",
   "phone": "0123456788",
-  "password": "123456",
-  "address": "Long Duc, Vinh Long",
-  "role_id": {
-    "$oid": "6923ee30a762f95c92171e55"
-  },
+  "password": "$2a$10$v646TVB9pP9w6xRbEnP2y.MD2Xdmq4uyEgA9MdvQ0zY8Zpx0WdM9e",
+  "address": "456 Customer Street, Ha Noi",
+  "role": "customer",
   "created_at": {
     "$date": "2025-01-01T00:00:00.000Z"
   }

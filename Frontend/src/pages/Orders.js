@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
 import orderService from '../services/orderService';
+import { getProductImage } from '../utils/imageHelper';
 
 const Orders = () => {
   const { user } = useContext(AuthContext);
@@ -136,10 +137,10 @@ const Orders = () => {
                   {order.items?.slice(0, 3).map((item, index) => (
                     <div key={index} className="flex items-center space-x-4">
                       <div className="w-16 h-16 bg-gray-100 flex-shrink-0 rounded overflow-hidden">
-                        {item.product?.image ? (
+                        {getProductImage(item.product) ? (
                           <img 
-                            src={item.product.image} 
-                            alt={item.product.name}
+                            src={getProductImage(item.product)} 
+                            alt={item.product?.name}
                             className="w-full h-full object-cover"
                           />
                         ) : (

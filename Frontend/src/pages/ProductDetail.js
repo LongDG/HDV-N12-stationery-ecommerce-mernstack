@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import productService from '../services/productService';
 import { CartContext } from '../context/CartContext';
 import { AuthContext } from '../context/AuthContext';
+import { getProductImage, getProductStock, getProductCategoryName } from '../utils/imageHelper';
 
 const ProductDetail = () => {
   const { id } = useParams();
@@ -56,7 +57,7 @@ const ProductDetail = () => {
   };
 
   const incrementQuantity = () => {
-    if (quantity < (product?.stock_quantity || product?.stockQuantity || 99)) {
+    if (quantity < getProductStock(product) || 99) {
       setQuantity(quantity + 1);
     }
   };
@@ -100,7 +101,7 @@ const ProductDetail = () => {
     );
   }
 
-  const stockQuantity = product.stock_quantity || product.stockQuantity || 0;
+  const stockQuantity = getProductStock(product);
   const oldPrice = product.price * 1.5;
   const discount = Math.floor(Math.random() * 40) + 10;
 
@@ -113,9 +114,9 @@ const ProductDetail = () => {
           <div className="col-span-12 md:col-span-7">
             <div className="sticky top-24">
               <div className="aspect-square bg-white rounded-lg mb-4 overflow-hidden border border-gray-200 shadow-lg">
-                {product.image ? (
+                {getProductImage(product) ? (
                   <img 
-                    src={product.image} 
+                    src={getProductImage(product)} 
                     alt={product.name}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
@@ -136,7 +137,7 @@ const ProductDetail = () => {
               
               {/* Category */}
               <p className="text-sm text-gray-600 mb-2 uppercase">
-                {product.category?.name || 'Văn phòng phẩm'}
+                {getProductCategoryName(product) || 'Văn phòng phẩm'}
               </p>
               
               {/* Product Name */}
@@ -243,7 +244,7 @@ const ProductDetail = () => {
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-600">Danh mục:</span>
-                  <span className="font-bold">{product.category?.name || 'Văn phòng phẩm'}</span>
+                  <span className="font-bold">{getProductCategoryName(product) || 'Văn phòng phẩm'}</span>
                 </div>
                 {product.supplier && (
                   <div className="flex justify-between">
@@ -275,9 +276,9 @@ const ProductDetail = () => {
                 <article key={related._id} className="group">
                   <Link to={`/products/${related._id}`} className="block">
                     <div className="aspect-square bg-white mb-4 overflow-hidden rounded-lg border border-gray-200">
-                      {related.image ? (
+                      {getProductImage(related) ? (
                         <img 
-                          src={related.image}
+                          src={getProductImage(related)}
                           alt={related.name}
                           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                         />

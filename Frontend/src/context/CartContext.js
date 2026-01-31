@@ -27,8 +27,15 @@ export const CartProvider = ({ children }) => {
       setLoading(true);
       const response = await cartService.getCart();
       if (response.success) {
-        setCartItems(response.data.items || []);
-        calculateTotals(response.data.items || []);
+        // API trả về items với product_id được populate
+        // Transform để frontend sử dụng product thay vì product_id
+        const transformedItems = (response.data.items || []).map(item => ({
+          ...item,
+          product: item.product_id, // Backend populate product_id
+          _id: item._id || item.product_id?._id
+        }));
+        setCartItems(transformedItems);
+        calculateTotals(transformedItems);
       }
     } catch (error) {
       console.error('Error fetching cart:', error);
@@ -39,7 +46,10 @@ export const CartProvider = ({ children }) => {
 
   const calculateTotals = (items) => {
     const count = items.reduce((acc, item) => acc + item.quantity, 0);
-    const totalAmount = items.reduce((acc, item) => acc + (item.product?.price || 0) * item.quantity, 0);
+    const totalAmount = items.reduce((acc, item) => {
+      const price = item.product?.price || item.product_id?.price || 0;
+      return acc + price * item.quantity;
+    }, 0);
     setCartCount(count);
     setTotal(totalAmount);
   };

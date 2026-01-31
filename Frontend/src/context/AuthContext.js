@@ -18,9 +18,9 @@ export const AuthProvider = ({ children }) => {
     setLoading(false);
   }, []);
 
-  const login = async (credentials) => {
+  const login = async (email, password) => {
     try {
-      const response = await authService.login(credentials);
+      const response = await authService.login({ email, password });
       if (response.success) {
         localStorage.setItem('token', response.token);
         localStorage.setItem('user', JSON.stringify(response.user));
@@ -29,7 +29,7 @@ export const AuthProvider = ({ children }) => {
       }
       return { success: false, message: response.message };
     } catch (error) {
-      return { success: false, message: error.message || 'Đăng nhập thất bại' };
+      throw error;
     }
   };
 

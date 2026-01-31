@@ -2,6 +2,27 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import productService from '../services/productService';
 import categoryService from '../services/categoryService';
+import { getProductImage, getProductStock, getProductCategoryName } from '../utils/imageHelper';
+
+// Category icon mapping
+const categoryIcons = {
+  'Bìa hồ sơ': '📁',
+  'Bút ký': '🖊️',
+  'Bút bi': '✒️',
+  'Sổ': '📓',
+  'Băng keo': '📦',
+  'Bảng tên - dây đeo': '🏷️',
+  'Bút chì gỗ': '✏️',
+  'Hóa đơn': '🧾',
+  'Giấy các loại': '📄',
+  'Bấm kim': '📎',
+  'Máy tính': '🖩',
+  'Thước': '📏'
+};
+
+const getCategoryIcon = (category) => {
+  return categoryIcons[category?.name] || '📦';
+};
 
 const Home = () => {
   const [categories, setCategories] = useState([]);
@@ -68,11 +89,12 @@ const Home = () => {
                   </Link>
                 </div>
               </div>
-              <div className="hidden md:block bg-gradient-to-br from-red-100 to-orange-100 h-80 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="text-8xl mb-4">📚</div>
-                  <p className="text-gray-600 font-medium">Văn phòng phẩm chính hãng</p>
-                </div>
+              <div className="hidden md:flex h-80 items-center justify-center overflow-hidden">
+                <img 
+                  src="/images/banner.png" 
+                  alt="Banner văn phòng phẩm"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
@@ -90,8 +112,8 @@ const Home = () => {
           </div>
           
           {loading ? (
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4">
-              {[...Array(8)].map((_, i) => (
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+              {[...Array(6)].map((_, i) => (
                 <div key={i} className="bg-white rounded-lg p-4 animate-pulse">
                   <div className="aspect-square bg-gray-200 rounded-lg mb-3"></div>
                   <div className="h-4 bg-gray-200 rounded"></div>
@@ -99,19 +121,19 @@ const Home = () => {
               ))}
             </div>
           ) : (
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4">
-              {categories.slice(0, 8).map((category) => (
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+              {categories.slice(0, 12).map((category) => (
                 <Link 
                   key={category._id}
                   to={`/products?category=${category._id}`}
-                  className="group bg-white rounded-lg p-4 hover:shadow-lg transition-all duration-300"
+                  className="group bg-white rounded-lg p-4 hover:shadow-lg transition-all duration-300 border border-gray-100"
                 >
-                  <div className="aspect-square bg-gray-100 rounded-lg mb-3 overflow-hidden flex items-center justify-center">
-                    <span className="text-3xl text-gray-400 font-bold group-hover:scale-110 transition-transform duration-500">
-                      {category.name?.charAt(0) || '?'}
+                  <div className="aspect-square bg-gradient-to-br from-red-50 to-orange-50 rounded-lg mb-3 overflow-hidden flex items-center justify-center">
+                    <span className="text-5xl group-hover:scale-110 transition-transform duration-500">
+                      {getCategoryIcon(category)}
                     </span>
                   </div>
-                  <h3 className="text-sm font-medium text-center group-hover:text-red-600 transition-colors">
+                  <h3 className="text-sm font-medium text-center group-hover:text-red-600 transition-colors line-clamp-2">
                     {category.name}
                   </h3>
                 </Link>
@@ -153,9 +175,9 @@ const Home = () => {
                 <Link to={`/products/${product._id}`} className="block">
                   {/* Image */}
                   <div className="aspect-square bg-gradient-to-br from-gray-100 to-gray-200 overflow-hidden relative">
-                    {product.image ? (
+                    {getProductImage(product) ? (
                       <img 
-                        src={product.image} 
+                        src={getProductImage(product)} 
                         alt={product.name}
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                       />
@@ -176,7 +198,7 @@ const Home = () => {
                   {/* Info */}
                   <div className="space-y-2 px-4 pb-4 pt-3">
                     <p className="text-xs text-gray-600 tracking-wide uppercase">
-                      {product.category?.name || 'Văn phòng phẩm'}
+                      {getProductCategoryName(product) || 'Văn phòng phẩm'}
                     </p>
                     <h3 className="font-bold text-lg leading-tight group-hover:text-red-600 transition-colors line-clamp-2">
                       {product.name}
@@ -186,7 +208,7 @@ const Home = () => {
                         {formatPrice(product.price)}
                       </span>
                       <span className="text-xs text-gray-600">
-                        Còn {product.stock_quantity || product.stockQuantity || 0}
+                        Còn {getProductStock(product)}
                       </span>
                     </div>
                   </div>

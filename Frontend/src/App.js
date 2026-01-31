@@ -19,6 +19,7 @@ import Checkout from './pages/Checkout';
 import Orders from './pages/Orders';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import Admin from './pages/Admin';
 
 function App() {
   return (
@@ -41,6 +42,9 @@ function App() {
               <Route path="/cart" element={<Cart />} />
               <Route path="/checkout" element={<Checkout />} />
               <Route path="/orders" element={<Orders />} />
+              
+              {/* Admin Routes */}
+              <Route path="/admin" element={<Admin />} />
             </Routes>
           </Layout>
         </CartProvider>

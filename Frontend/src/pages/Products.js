@@ -4,6 +4,7 @@ import productService from '../services/productService';
 import categoryService from '../services/categoryService';
 import { CartContext } from '../context/CartContext';
 import { AuthContext } from '../context/AuthContext';
+import { getProductImage, getProductStock } from '../utils/imageHelper';
 
 const Products = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -247,9 +248,9 @@ const Products = () => {
                           <Link to={`/products/${product._id}`} className="block">
                             {/* Image */}
                             <div className="aspect-square bg-white overflow-hidden relative">
-                              {product.image ? (
+                              {getProductImage(product) ? (
                                 <img 
-                                  src={product.image} 
+                                  src={getProductImage(product)} 
                                   alt={product.name}
                                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                                 />
@@ -329,9 +330,9 @@ const Products = () => {
                             {/* Image */}
                             <Link to={`/products/${product._id}`} className="flex-shrink-0 w-40 h-40 md:w-48 md:h-48">
                               <div className="w-full h-full bg-white overflow-hidden relative">
-                                {product.image ? (
+                                {getProductImage(product) ? (
                                   <img 
-                                    src={product.image} 
+                                    src={getProductImage(product)} 
                                     alt={product.name}
                                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                                   />
@@ -364,7 +365,7 @@ const Products = () => {
                                 
                                 {/* Stock info */}
                                 <div className="flex items-center gap-4 text-sm">
-                                  {(product.stock_quantity || product.stockQuantity) > 0 ? (
+                                  {getProductStock(product) > 0 ? (
                                     <span className="text-green-600 flex items-center gap-1">
                                       <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>

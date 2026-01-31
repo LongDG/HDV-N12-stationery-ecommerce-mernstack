@@ -47,9 +47,13 @@ exports.register = async (req, res) => {
       message: 'Đăng ký thành công',
       token,
       user: {
+        _id: user._id,
         id: user._id,
         name: user.name,
-        email: user.email
+        email: user.email,
+        phone: user.phone,
+        address: user.address,
+        role: user.role
       }
     });
   } catch (error) {
@@ -106,9 +110,13 @@ exports.login = async (req, res) => {
       message: 'Đăng nhập thành công',
       token,
       user: {
+        _id: user._id,
         id: user._id,
         name: user.name,
-        email: user.email
+        email: user.email,
+        phone: user.phone,
+        address: user.address,
+        role: user.role
       }
     });
   } catch (error) {
@@ -132,7 +140,10 @@ exports.getMe = async (req, res) => {
       user: {
         id: user._id,
         name: user.name,
-        email: user.email
+        email: user.email,
+        phone: user.phone,
+        address: user.address,
+        role: user.role
       }
     });
   } catch (error) {
