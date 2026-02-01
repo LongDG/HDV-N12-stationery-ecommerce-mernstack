@@ -59,7 +59,7 @@
     "price": 90000,
     "discount_percent": 10,
     "status": 1,
-    "images": "[object Object],[object Object]",
+    "images": "/images/1-Bia/Bìa hộp đựng hồ sơ tài liệu ERAS.jpg",
     "stock": 120,
     "created_at": {
       "$date": "2025-01-01T00:00:00.000Z"
@@ -81,7 +81,7 @@
     "price": 65000,
     "discount_percent": 10,
     "status": 1,
-    "images": "[object Object],[object Object]",
+    "images": "/images/1-Bia/Bìa lỗ A4 – 600g-65k.jpg",
     "stock": 120,
     "created_at": {
       "$date": "2025-01-01T00:00:00.000Z"
@@ -103,7 +103,7 @@
     "price": 75000,
     "discount_percent": 10,
     "status": 1,
-    "images": "[object Object],[object Object]",
+    "images": "/images/1-Bia/Bìa Thiên Long, Bìa Nhựa Nhiều Lá Khổ A4.jpg",
     "stock": 120,
     "created_at": {
       "$date": "2025-01-01T00:00:00.000Z"
@@ -125,7 +125,7 @@
     "price": 15000,
     "discount_percent": 10,
     "status": 1,
-    "images": "[object Object],[object Object]",
+    "images": "/images/2-But ky/Bút ký Uni- Ball UB150 ( Loại 2).jpg",
     "stock": 120,
     "created_at": {
       "$date": "2025-01-01T00:00:00.000Z"
@@ -147,7 +147,7 @@
     "price": 40000,
     "discount_percent": 10,
     "status": 1,
-    "images": "[object Object],[object Object]",
+    "images": "/images/2-But ky/Bút ký Uni-ball UB150 – CHÍNH HÃNG.jpg",
     "stock": 120,
     "created_at": {
       "$date": "2025-01-01T00:00:00.000Z"
@@ -169,7 +169,7 @@
     "price": 39000,
     "discount_percent": 10,
     "status": 1,
-    "images": "[object Object],[object Object]",
+    "images": "/images/2-But ky/Bút ký tên ZEBRA F301 loại 1 (Mực xanh).jpg",
     "stock": 120,
     "created_at": {
       "$date": "2025-01-01T00:00:00.000Z"
@@ -191,7 +191,7 @@
     "price": 190000,
     "discount_percent": 10,
     "status": 1,
-    "images": "[object Object],[object Object]",
+    "images": "/images/2-But ky/Bút Ký VB 1061 BS – Tặng kèm ruột bút.jpg",
     "stock": 120,
     "created_at": {
       "$date": "2025-01-01T00:00:00.000Z"
@@ -213,7 +213,7 @@
     "price": 190000,
     "discount_percent": 10,
     "status": 1,
-    "images": "[object Object],[object Object]",
+    "images": "/images/2-But ky/Bút Ký VR 2301 BK – Tặng kèm ruột bút.jpg",
     "stock": 120,
     "created_at": {
       "$date": "2025-01-01T00:00:00.000Z"
@@ -235,7 +235,7 @@
     "price": 4000,
     "discount_percent": 10,
     "status": 1,
-    "images": "[object Object],[object Object]",
+    "images": "/images/3-But bi/Bút bi Double A – ALPINE BALL 0.7mm – Mực xanh (DBP-507-BG).jpg",
     "stock": 120,
     "created_at": {
       "$date": "2025-01-01T00:00:00.000Z"
@@ -257,7 +257,7 @@
     "price": 20000,
     "discount_percent": 10,
     "status": 1,
-    "images": "[object Object],[object Object]",
+    "images": "/images/3-But bi/Ruột bút xoá kéo PLUS.jpg",
     "stock": 120,
     "created_at": {
       "$date": "2025-01-01T00:00:00.000Z"
@@ -279,7 +279,7 @@
     "price": 220000,
     "discount_percent": 10,
     "status": 1,
-    "images": "[object Object],[object Object]",
+    "images": "/images/3-But bi/Hộp 20 Bút Bi Thiên Long TL036.jpg",
     "stock": 120,
     "created_at": {
       "$date": "2025-01-01T00:00:00.000Z"
@@ -301,7 +301,7 @@
     "price": 9000,
     "discount_percent": 10,
     "status": 1,
-    "images": "[object Object],[object Object]",
+    "images": "/images/3-But bi/Bút Bi Thiên Long TL-031.jpg",
     "stock": 120,
     "created_at": {
       "$date": "2025-01-01T00:00:00.000Z"
@@ -323,7 +323,7 @@
     "price": 8000,
     "discount_percent": 10,
     "status": 1,
-    "images": "[object Object],[object Object]",
+    "images": "/images/3-But bi/Bút bi Thiên Long TL-095 ngòi 0.5mm – Mực xanh.jpg",
     "stock": 120,
     "created_at": {
       "$date": "2025-01-01T00:00:00.000Z"
