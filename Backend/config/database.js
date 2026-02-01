@@ -8,11 +8,7 @@ const MONGODB_URI_LOCAL = 'mongodb://localhost:27017/vanphongpham';
 
 const connectDB = async () => {
     try {
-        const conn = await mongoose.connect(MONGODB_URI_LOCAL, {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-            // Các tùy chọn 'useCreateIndex' và 'useFindAndModify' không cần thiết từ Mongoose 6 trở lên
-        });
+        const conn = await mongoose.connect(MONGODB_URI_LOCAL);
 
         console.log(`MongoDB Connected: ${conn.connection.host}`);
     } catch (error) {

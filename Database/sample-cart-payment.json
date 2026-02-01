@@ -1,0 +1,71 @@
+// Dữ liệu mẫu cho MongoDB collections Cart và Payment
+// Import vào MongoDB Compass hoặc mongosh
+
+// CARTS Collection
+[
+  {
+    "_id": { "$oid": "69240c1027f5cc030ceca9d1" },
+    "user_id": { "$oid": "6924023b27f5cc030ceca979" },
+    "items": [
+      {
+        "product_id": { "$oid": "6924113327f5cc030ceca9e4" },
+        "quantity": 2
+      },
+      {
+        "product_id": { "$oid": "6924119d27f5cc030ceca9e7" },
+        "quantity": 1
+      }
+    ],
+    "created_at": { "$date": "2025-01-02T10:30:00.000Z" },
+    "updated_at": { "$date": "2025-01-02T14:15:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "69240c2527f5cc030ceca9d2" },
+    "user_id": { "$oid": "6924039127f5cc030ceca989" },
+    "items": [
+      {
+        "product_id": { "$oid": "6924175d27f5cc030ceca9e9" },
+        "quantity": 3
+      }
+    ],
+    "created_at": { "$date": "2025-01-03T09:15:00.000Z" },
+    "updated_at": { "$date": "2025-01-03T09:15:00.000Z" }
+  }
+]
+
+// PAYMENTS Collection
+[
+  {
+    "_id": { "$oid": "69240c5027f5cc030ceca9d3" },
+    "order_id": { "$oid": "69240b4527f5cc030ceca9ca" },
+    "user_id": { "$oid": "6924023b27f5cc030ceca979" },
+    "payment_method": "momo",
+    "amount": 150000,
+    "transaction_code": "MOMO_TXN_20250102_001",
+    "status": "completed",
+    "created_at": { "$date": "2025-01-02T16:45:00.000Z" },
+    "updated_at": { "$date": "2025-01-02T16:50:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "69240c6527f5cc030ceca9d4" },
+    "order_id": { "$oid": "69240b4527f5cc030ceca9ca" },
+    "user_id": { "$oid": "6924039127f5cc030ceca989" },
+    "payment_method": "cod",
+    "amount": 89000,
+    "transaction_code": null,
+    "status": "pending",
+    "created_at": { "$date": "2025-01-03T11:20:00.000Z" },
+    "updated_at": { "$date": "2025-01-03T11:20:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "69240c7027f5cc030ceca9d5" },
+    "order_id": { "$oid": "69240b4527f5cc030ceca9ca" },
+    "user_id": { "$oid": "6924023b27f5cc030ceca979" },
+    "payment_method": "banking",
+    "amount": 256000,
+    "transaction_code": "VCB_20250104_125847",
+    "status": "completed",
+    "created_at": { "$date": "2025-01-04T08:30:00.000Z" },
+    "updated_at": { "$date": "2025-01-04T08:35:00.000Z" }
+  }
+]

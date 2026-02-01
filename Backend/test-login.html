@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Login</title>
+</head>
+<body>
+    <h1>Test Login API</h1>
+    
+    <script>
+        async function testLogin() {
+            try {
+                const response = await fetch('/api/auth/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        email: 'khoa@gmail.com',
+                        password: '123456'
+                    })
+                });
+                
+                const data = await response.json();
+                console.log('Login test result:', data);
+                document.getElementById('result').innerHTML = 
+                    '<h3>Login Result:</h3>' +
+                    '<pre>' + JSON.stringify(data, null, 2) + '</pre>' +
+                    '<p>Status: ' + response.status + '</p>';
+                    
+            } catch (error) {
+                console.error('Login test error:', error);
+                document.getElementById('result').innerHTML = 
+                    '<h3>Error:</h3><p>' + error.message + '</p>';
+            }
+        }
+        
+        // Test on page load
+        testLogin();
+    </script>
+    
+    <div id="result">Testing...</div>
+</body>
+</html>

@@ -1,330 +1,702 @@
-[{
-  "_id": {
-    "$oid": "6924113327f5cc030ceca9e4"
+[
+  {
+    "_id": { "$oid": "6924113327f5cc030ceca9e4" },
+    "name": "Bìa 6 ngăn nút cài",
+    "sku": "TL08-01",
+    "category_id": { "$oid": "692403df27f5cc030ceca98b" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Với thiết kế chia ngăn tiện lợi, bạn có thể sắp xếp và quản lý tài liệu một cách gọn gàng hơn...",
+    "price": 45000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/1-Bia/Bìa 6 ngăn nút cài.jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
   },
-  "name": "Bìa 6 ngăn nút cài",
-  "sku": "TL08",
-  "category_id": {
-    "$oid": "692403df27f5cc030ceca98b"
+  {
+    "_id": { "$oid": "6924119d27f5cc030ceca9e7" },
+    "name": "Bìa Còng Nhẫn A4 – 20mm",
+    "sku": "TL08-02",
+    "category_id": { "$oid": "692403df27f5cc030ceca98b" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Thiết kế vừa vặn, hiện đại Kích thước vừa phải giúp giấy tờ được giữ gọn gàng...",
+    "price": 25000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/1-Bia/Bìa Còng Nhẫn A4 – 20mm.jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
   },
-  "supplier_id": {
-    "$oid": "6924084f27f5cc030ceca9a1"
+  {
+    "_id": { "$oid": "692414c827f5cc030ceca9e8" },
+    "name": "Bìa hộp đựng hồ sơ tài liệu ERAS",
+    "sku": "TL08-03",
+    "category_id": { "$oid": "692403df27f5cc030ceca98b" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Sản phẩm được làm từ nhựa PP có độ bền cao, không độc hại...",
+    "price": 90000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/1-Bia/Bìa hộp đựng hồ sơ tài liệu ERAS.jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
   },
-  "description": "Với thiết kế chia ngăn tiện lợi, bạn có thể sắp xếp và quản lý tài liệu một cách gọn gàng hơn, đồng thời giữ cho giấy tờ luôn phẳng phiu, không bị ẩm mốc. Bìa 6 ngăn là một trong những sản phẩm không thể thiếu của học sinh, sinh viên và đặc biệt là nhân viên văn phòng, giúp bạn lưu giữ hồ sơ gọn gàng và cẩn thận, đảm bảo giấy tờ không bị nhàu nát hay rơi rớt, mang lại hiệu quả sử dụng cao trong việc bảo quản tài liệu.",
-  "price": 45000,
-  "discount_percent": 10,
-  "status": 1,
-  "images": "\/images\/1-Bia\/Bìa 6 ngăn nút cài.jpg",
-  "stock": 120,
-  "created_at": {
-    "$date": "2025-01-01T00:00:00.000Z"
+  {
+    "_id": { "$oid": "6924175d27f5cc030ceca9e9" },
+    "name": "Bìa lỗ A4 – 600g ",
+    "sku": "TL08-04",
+    "category_id": { "$oid": "692403df27f5cc030ceca98b" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Sản phẩm được làm bằng nhựa trong suốt gồm 11 lỗ nằm bên mép trái...",
+    "price": 65000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/1-Bia/Bìa lỗ A4 – 600g-65k.jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "692417db27f5cc030ceca9ea" },
+    "name": "Bìa 20 Lá/ 40 Lá/60 Lá/80 lá Thiên Long, Bìa Nhựa Nhiều Lá Khổ A4",
+    "sku": "TL08-05",
+    "category_id": { "$oid": "692403df27f5cc030ceca98b" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Bìa giúp giữ giấy tờ được sạch sẽ, phù hợp với khổ giấy A4...",
+    "price": 75000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/1-Bia/Bìa Thiên Long, Bìa Nhựa Nhiều Lá Khổ A4.jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "6924187627f5cc030ceca9eb" },
+    "name": "Bút ký Uni- Ball UB150 ( Loại 2)",
+    "sku": "TL08-06",
+    "category_id": { "$oid": "6924049527f5cc030ceca993" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Màu mực viết: xanh, Thân và nắp thiết kế thanh nhã...",
+    "price": 15000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/2-But ky/Bút ký Uni- Ball UB150 ( Loại 2).jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "6924191627f5cc030ceca9ee" },
+    "name": "Bút ký Uni-ball UB150 – CHÍNH HÃNG",
+    "sku": "TL08-07",
+    "category_id": { "$oid": "6924049527f5cc030ceca993" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Bút bi nước Uni-ball eye Micro UB150 nắp đậy...",
+    "price": 40000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/2-But ky/Bút ký Uni-ball UB150 – CHÍNH HÃNG.jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "692419ac27f5cc030ceca9ef" },
+    "name": "Bút ký tên ZEBRA F301 loại 1 (Mực xanh)",
+    "sku": "TL08-08",
+    "category_id": { "$oid": "6924049527f5cc030ceca993" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Bút ký tên ZEBRA F.301 loại 1 được đánh giá cao về thiết kế...",
+    "price": 39000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/2-But ky/Bút ký tên ZEBRA F301 loại 1 (Mực xanh).jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "692419ec27f5cc030ceca9f0" },
+    "name": "Bút Ký VB 1061 BS – Tặng kèm ruột bút",
+    "sku": "TL08-09",
+    "category_id": { "$oid": "6924049527f5cc030ceca993" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Chất liệu : thép không gỉ, Ngòi bi, màu mực  Xanh...",
+    "price": 190000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/2-But ky/Bút Ký VB 1061 BS – Tặng kèm ruột bút.jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "69241a8427f5cc030ceca9f1" },
+    "name": "Bút Ký VR 2301 BK – Tặng kèm ruột bút",
+    "sku": "TL08-10",
+    "category_id": { "$oid": "6924049527f5cc030ceca993" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Chất liệu : thép không gỉ, Ngòi bi, màu mực  Xanh...",
+    "price": 190000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/2-But ky/Bút Ký VR 2301 BK – Tặng kèm ruột bút.jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "69241edd27f5cc030ceca9f2" },
+    "name": "Bút bi Double A – ALPINE BALL 0.7mm – Mực xanh (DBP-507-BG)",
+    "sku": "TL08-11",
+    "category_id": { "$oid": "692404a027f5cc030ceca994" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Bút bi Double A – ALPINE BALL 0.7mm – Mực xanh (DBP-507-BG)",
+    "price": 4000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/3-But bi/Bút bi Double A – ALPINE BALL 0.7mm – Mực xanh (DBP-507-BG).jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "69241f8027f5cc030ceca9f9" },
+    "name": "Ruột bút xoá kéo PLUS",
+    "sku": "TL08-12",
+    "category_id": { "$oid": "692404a027f5cc030ceca994" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "CÁCH THAY THẾ RUỘT XOÁ: +Đẩy khoá trượt về chữ OPEN...",
+    "price": 20000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/3-But bi/Ruột bút xoá kéo PLUS.jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "6924200f27f5cc030ceca9fa" },
+    "name": "Hộp 20 Bút Bi Thiên Long TL036",
+    "sku": "TL08-13",
+    "category_id": { "$oid": "692404a027f5cc030ceca994" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Thân bút làm từ nhựa màu đục. Tai cài bút bằng kim loại...",
+    "price": 220000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/3-But bi/Hộp 20 Bút Bi Thiên Long TL036.jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "692420a927f5cc030ceca9fb" },
+    "name": "Bút Bi Thiên Long TL-031",
+    "sku": "TL08-14",
+    "category_id": { "$oid": "692404a027f5cc030ceca994" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Giắt bút vòng bằng kim loại, nút xi kim loai sáng bóng...",
+    "price": 9000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/3-But bi/Bút Bi Thiên Long TL-031.jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "692420bd27f5cc030ceca9fc" },
+    "name": "Bút bi Thiên Long TL-095 ngòi 0.5mm – Mực xanh",
+    "sku": "TL08-15",
+    "category_id": { "$oid": "692404a027f5cc030ceca994" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Bút tự động thu ngòi khi cài vào túi áo...",
+    "price": 8000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/3-But bi/Bút bi Thiên Long TL-095 ngòi 0.5mm – Mực xanh.jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "697de9a24a7cededa00a2147" },
+    "name": "Sổ bìa da B5 18222 ( Khổ 250 x 175 mm) – 80 trang",
+    "sku": "TL08-16",
+    "category_id": { "$oid": "6924064b27f5cc030ceca995" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Kích thước : 250 x 175 mm\n\nSố trang : 80 trang\n\nSổ có thiết kế trang nhã, phù hợp sử dụng với học sinh, sinh viên và nhân viên văn phòng, để ghi chú trong học tập và làm việc.\n\nSản phẩm được làm từ chất liệu giấy tự nhiên cao cấp, bám mực tốt, không độc hại, an toàn cho sức khỏe.",
+    "price": 95000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/4-So/Sổ bìa da B5 18222 ( Khổ 250 x 175 mm) – 80 trang.jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "697dea704a7cededa00a214c" },
+    "name": "Sổ bìa da đen CK7 dày – KHỔ 16×20.5 cm – 100 trang",
+    "sku": "TL08-17",
+    "category_id": { "$oid": "6924064b27f5cc030ceca995" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Kích thước : 16 x 20.5 cm\n\nSố trang : 100 trang\n\nGiấy trắng",
+    "price": 40000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/4-So/Sổ bìa da đen CK7 dày – KHỔ 16×20.5 cm – 100 trang.jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "697deb124a7cededa00a214d" },
+    "name": "Sổ bìa da nút cài khổ A5 – 25K21- 90 trang",
+    "sku": "TL08-18",
+    "category_id": { "$oid": "6924064b27f5cc030ceca995" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Kích thước : 220 x 150mm\n\nSố trang : 90 trang\n\nSổ có thiết kế trang nhã, phù hợp sử dụng với học sinh, sinh viên và nhân viên văn phòng, để ghi chú trong học tập và làm việc.\n\nSản phẩm được làm từ chất liệu giấy tự nhiên cao cấp, bám mực tốt, không độc hại, an toàn cho sức khỏe.",
+    "price": 58000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/4-So/Sổ bìa da nút cài khổ A5 – 25K21- 90 trang.jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "697deb464a7cededa00a214e" },
+    "name": "Sổ tay 8 x 11 cm",
+    "sku": "TL08-19",
+    "category_id": { "$oid": "6924064b27f5cc030ceca995" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Thích hợp cho nhiều đối tượng, nhiều ngành nghề khác nhau sử dụng.\n\nKích thước nhỏ gọn, tiện lợi, dễ dàng mang theo sử dụng.\n\nLoại giấy có dòng kẻ, kẻ caro thích hợp làm sổ tay, sổ ghi chép nhanh, sổ ghi thông tin số điện thoại, hoặc để ký họa dùng trong các ngành nghệ thuật.\n\nKích thước :8 x 11 cm\n\nSố trang :50 trang\n\nSản phẩm có nhiều màu . SHOP BÁN MÀU NGẪU NHIÊN ",
+    "price": 5000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/4-So/Sổ tay 8 x 11 cm.jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "697debb34a7cededa00a214f" },
+    "name": "Sổ tay liên xô 9×15.5 cm",
+    "sku": "TL08-20",
+    "category_id": { "$oid": "6924064b27f5cc030ceca995" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Thích hợp cho nhiều đối tượng, nhiều ngành nghề khác nhau sử dụng.\n\nKích thước nhỏ gọn, tiện lợi, dễ dàng mang theo sử dụng.\n\nLoại giấy có dòng kẻ, kẻ caro thích hợp làm sổ tay, sổ ghi chép nhanh, sổ ghi thông tin số điện thoại, hoặc để ký họa dùng trong các ngành nghệ thuật.\n\nKích thước :9×15.5 cm\n\nSổ dày : 110 trang\n\nSổ mỏng : 55 trang",
+    "price": 13000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/4-So/Sổ tay liên xô 9×15.5 cm.jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "697deea64a7cededa00a2150" },
+    "name": "Băng keo 2 mặt trong siêu dính 2F4 – 3 mét",
+    "sku": "TL08-21",
+    "category_id": { "$oid": "6924065327f5cc030ceca996" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Keo dán 2 mặt đa năng: cố định ổ điện, kệ, giá, bảng, dán tranh, dán gương….\n\nKeo trong suốt, tính thẩm mỹ cao\n\nKeo dán chịu lực, không cần khoan đục\n\nDán tường chống thấm nước\n\nBảo vệ chống va đập góc tường, cầu thang, cạnh bàn.",
+    "price": 40000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/5-Bang keo/Băng keo 2 mặt trong siêu dính 2F4 – 3 mét.jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "697deee94a7cededa00a2153" },
+    "name": "Băng keo điện NANO 1F8 x 10Y",
+    "sku": "TL08-22",
+    "category_id": { "$oid": "6924065327f5cc030ceca996" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Với khả năng cách điện tốt băng keo điện được sử dụng chính trong việc đấu nối, phân tách các mối dây trong hệ thống điện gia đình và các ngành công nghiệp điện.\n\nBăng keo điện được ứng dụng và phổ biến nhất ở trong các ngành công nghiệp điện, điện tử. Chúng ta không thể thay thế băng keo điện với loại băng keo khác bởi chúng không có khả năng cách điện tốt với môi trường xung quanh sẽ gây ra nhiều nguy hiểm.\n\nChống cháy cho các công trình điện, dây điện, thiết bị điện hay các vật dụng cần cách ly nhiệt, điện.",
+    "price": 7000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/5-Bang keo/Băng keo điện NANO 1F8 x 10Y.jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "697def184a7cededa00a2154" },
+    "name": "Cây băng keo giấy 2F4 / 5F",
+    "sku": "TL08-23",
+    "category_id": { "$oid": "6924065327f5cc030ceca996" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Quy cách : 2F4 ( 12 cuộn / cây )\n\n5F ( 6 cuộn / cây)\n\nSản phẩm dùng cố định các loại giấy, chặn màu khi tô màu, bìa, plastic,… (có thể dùng để cố định khi bọc sách bằng plastic)\n\nSản phẩm hạn chế thấm nước . Không rách giấy khi tháo ra (nên thao tác chậm, phụ thuộc vào chất liệu giấy), dễ dàng xé bằng tay",
+    "price": 70000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/5-Bang keo/Cây băng keo giấy 2F4 - 5F.jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "697def394a7cededa00a2155" },
+    "name": "Hồ nước Queen 30ml – Đầu lưới",
+    "sku": "TL08-24",
+    "category_id": { "$oid": "6924065327f5cc030ceca996" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Không có mùi độc hại, không có những chất độc cấm sử dụng, an toàn tuyệt đối với cơ thể người sử dụng.\n\nKhi bị dính vào tay hoặc da chỉ cần sửa sạch với nước.\n\nĐầu keo dạng lưỡi gà giúp keo ra đều đều mà không bị khô đầu dán\n\nChất liệu keo tốt, có độ bám dính cao\n\nDính đa số các mặt phẳng chất liệu giấy, sau khi sử dụng xong nên đóng nắp lại để tránh keo bị khô khi tiếp xúc với không khí.\n\nChất lượng keo tốt bám dính lâu ngày, dễ sử dụng\n",
+    "price": 6000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/5-Bang keo/Hồ nước Queen 30ml – Đầu lưới.jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "697def5c4a7cededa00a2156" },
+    "name": "Màng PE, Màng co PE 3KG (cao 50cm)",
+    "sku": "TL08-25",
+    "category_id": { "$oid": "6924065327f5cc030ceca996" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Chiều cao: 50cm\n\nCân nặng toàn cuộn: 3 Kg\n\nMàu sắc : Trắng trong suốt\n\nCông dụng sản phẩm :\n\n– Màng PE có thể sử dụng quấn bụng, màng dẻo có thể kéo căng, có độ hít tốt, giữ chặt vùng bụng, ni lông làm nóng vùng bụng nên giảm mỡ khá tốt.\n\n– Màng PE quấn hàng hóa cố định hàng hóa, tiện lợi hơn bao ni lông vì có dộ bám dính\n\n– Màng PE sử dụng để gói hàng cho các shop bán hàng, thương mại điện tử, gói nhanh, giá thành rẻ\n\n– Màng PE có độ co giãn, có thể kéo căng được sử dụng nhiều trong việc quấn các linh kiện điện tử, quấn các sản phẩm gỗ, quấn pallet\n\n– Màng PE sử dụng đóng gói để bảo vệ sản phẩm, tránh nước, tránh han gỉ, trầy xước, chống bụi, đặc biệt cho những máy móc hoặc dụng cụ lâu ngày không sử dụng",
+    "price": 175000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/5-Bang keo/Màng PE, Màng co PE 3KG (cao 50cm).jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "697def804a7cededa00a2157" },
+    "name": "Bảng tên nhựa dẻo zipper No.303 DỌC – 9.6 x 15 cm",
+    "sku": "TL08-26",
+    "category_id": { "$oid": "6924066627f5cc030ceca997" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Bảng tên nhựa dẻo zipper đứng được làm bằng nhựa cao cấp có độ dẻo và dầy, trắng trong, rất mềm mại, miệng thẻ có đường khóa miết 2 mặt vào nhau chống thấm nước vào thẻ\n\nSản phẩm rất phù hợp cho học sinh – sinh viên, nhân viên, các đại biểu tham dự hội nghị, hội thảo…\n\nDùng Dây đeo thẻ để đeo hoặc móc vào\n\nKích thước lòng thẻ: 8.8 x 15 cm\n\nKích thước phủ bì: 9.6 x 12.5 cm",
+    "price": 3000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/6-Bangten-daydeo/Bảng tên nhựa dẻo zipper No.303 DỌC – 9.6 x 15 cm.jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "697defbf4a7cededa00a215b" },
+    "name": "Bảng tên nhựa dẻo zipper No.208/No.207 NGANG/ DỌC – 11.5 x 10 cm",
+    "sku": "TL08-27",
+    "category_id": { "$oid": "6924066627f5cc030ceca997" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Bảng tên nhựa dẻo zipper ngang/ dọc được làm bằng nhựa cao cấp có độ dẻo và dầy, trắng trong, rất mềm mại, miệng thẻ có đường khóa miết 2 mặt vào nhau chống thấm nước vào thẻ\n\nSản phẩm rất phù hợp cho học sinh – sinh viên, nhân viên, các đại biểu tham dự hội nghị, hội thảo…\n\nDùng Dây đeo thẻ để đeo hoặc móc vào\n\nKích thước lòng thẻ: 10.5 x 7.5 cm\n\nKích thước phủ bì: 11.5 x 10 cm",
+    "price": 3000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/6-Bangten-daydeo/Bảng tên nhựa dẻo zipper.jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "697deff04a7cededa00a215c" },
+    "name": "Bộ bảng tên dây đeo nhựa DỌC 7×10 cm",
+    "sku": "TL08-28",
+    "category_id": { "$oid": "6924066627f5cc030ceca997" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Xuất xứ: Việt Nam\n\nĐặc điểm: là sản phẩm gồm nguyên bộ thẻ nhựa và dây đeo, rất phổ biến trong văn phòng chuyên nghiệp. –\n\nChất lượng: nhựa tốt, dây vải có độ bền cao.\n\nKích thước: 7×10 cm",
+    "price": 5000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/6-Bangten-daydeo/Bộ bảng tên dây đeo nhựa DỌC 7×10 cm.jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "697df02b4a7cededa00a215d" },
+    "name": "Bộ bảng tên dây đeo nhựa NGANG 7×10 cm",
+    "sku": "TL08-29",
+    "category_id": { "$oid": "6924066627f5cc030ceca997" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Xuất xứ: Việt Nam\n\nĐặc điểm: là sản phẩm gồm nguyên bộ thẻ nhựa và dây đeo, rất phổ biến trong văn phòng chuyên nghiệp. –\n\nChất lượng: nhựa tốt, dây vải có độ bền cao.\n\nKích thước: 7×10 cm",
+    "price": 5000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/6-Bangten-daydeo/Bộ bảng tên dây đeo nhựa ngang 7×10 cm.jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "697df0414a7cededa00a215e" },
+    "name": "Dây đeo bảng tên nút bấm nhựa",
+    "sku": "TL08-30",
+    "category_id": { "$oid": "6924066627f5cc030ceca997" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Dây đeo thẻ móc nhựa được làm từ chất liệu mềm mại, được gia công tỉ mỉ,… không gây đau cổ người sử dụng.\n\nDây đeo thẻ nhân viên được thiết kế tinh tế, các đường cắt chuẩn xác, hoàn toàn không sở hữu các chi tiết thừa mang lại sự thẩm mĩ cao.\n\nMóc nhựa bền đẹp, nhẹ nhàng, tiện dụng.\n\nDây đeo thẻ móc nhựa được sử dụng rộng rãi trong các cơ quan, trường học, sử dụng trong các cuộc hội thảo, hội nghị, các cuộc thi sát hạch… mang lại hiệu quả kinh tế mà vẫn đảm bảo sự trang nghiêm, chuyên nghiệp.",
+    "price": 2000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/6-Bangten-daydeo/Dây đeo bảng tên nút bấm nhựa.jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "697df06f4a7cededa00a215f" },
+    "name": "Bút chì bấm Pentel 0.7mm ( PD107T-F) – CHÍNH HÃNG",
+    "sku": "TL08-31",
+    "category_id": { "$oid": "6924066627f5cc030ceca998" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Thương hiệu : Pentel\n\nNgòi bút 0.7mm\n\nBút chì bấm Pentel Techniclick 0.7mm sử dụng ngòi chì 0.7mm.\n\nSản phẩm giữ ngòi chì chắc chắn, không làm gãy ngòi chì và tắc bút như những loại bút thông thường khác.\n\nSản phẩm chính hãng Pentel Japan.",
+    "price": 39000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/7-Butchigo/Bút chì bấm Pentel 0.7mm ( PD107T-F) – CHÍNH HÃNG.jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "697df0ab4a7cededa00a2160" },
+    "name": "Bút chì bấm thân sắt M&G 0.5mm – MP1001",
+    "sku": "TL08-32",
+    "category_id": { "$oid": "6924066627f5cc030ceca998" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Thương hiệu: M&G\n\nThân bút bằng kim loại\n\nSản phẩm sử dụng dễ dàng, tiện lợi nhanh chóng\n\nChất liệu không gỉ\n\nBền, thoải mái khi cầm",
+    "price": 36000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/7-Butchigo/Bút chì bấm thân sắt M&G 0.5mm – MP1001.jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "697df0cf4a7cededa00a2161" },
+    "name": "Bút chì gỗ G-STAR 2B (No.027)",
+    "sku": "TL08-33",
+    "category_id": { "$oid": "6924066627f5cc030ceca998" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Thương hiệu : G-STAR\n\nĐóng gói : 12 bút / hộp\n\nBút chì thân gỗ có sẵn gôm, thân dạng hình lục giác, dễ cầm nắm khi viết.\n\nThân có thiết kế đơn giản, sơn màu đỏ đen\n\nRuột chì loại 2B, cứng và đen.\n\nCó gôm tẩy.\n\nThích hợp cho các hoạt động như ghi chép, vẽ nháp, học tập.\n\nHạn chế rơi nhiều lần và va đập mạnh khi vận chuyển và sử dụng",
+    "price": 4000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/7-Butchigo/Bút chì gỗ G-STAR 2B (No.027).jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "697df0f34a7cededa00a2162" },
+    "name": "Bút chì kim bấm M&G AMPU4501 ngòi 0.5mm)",
+    "sku": "TL08-34",
+    "category_id": { "$oid": "6924066627f5cc030ceca998" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Thương hiệu : M&G\n\nNgòi chì 0.5mm\n\nBút chì bấm được thiết kế từ chất liệu nhựa tổng hợp thân thiện với môi trường, bảo vệ tối đa sức khỏe người sử dụng.\n\nĐầu bút làm kim loại , mang lại độ chắc, bền\n\nNút bấm nằm trên đầu bút, tạo sự tiện lợi tối đa khi có thể giúp bạn dễ dàng bấm thêm chì\n\nNgười dùng có thể dễ dàng mang bút theo bên mình bằng cách gài lên túi áo.",
+    "price": 12000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/7-Butchigo/Bút chì kim bấm M&G AMPU4501 ngòi 0.5mm.jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "697df1144a7cededa00a2163" },
+    "name": "Chuốt bút chì M&G 1274 dạng nhỏ",
+    "sku": "TL08-35",
+    "category_id": { "$oid": "6924066627f5cc030ceca998" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Thương hiệu : M&G\n\nVới thiết kế nhỏ gọn\n\nLưỡi chuốt được làm bằng kim loại sáng bóng, không gỉ, sử dụng được trong thời gian dài.\n\nLưỡi chuốt sắc bén, khi sử dụng rất sắc bén, tạo được độ nhọn như ý trên đầu bút chì.",
+    "price": 4000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/7-Butchigo/Chuốt bút chì M&G 1274 dạng nhỏ.jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "697df1864a7cededa00a2164" },
+    "name": "Biên nhận 1 liên – 10.5 x 19 cm ( 50 tờ )",
+    "sku": "TL08-36",
+    "category_id": { "$oid": "6924066627f5cc030ceca999" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Xuất xứ : Việt Nam\n\nKích thước : 10 x 19 cm\n\nSố tờ : 50 tờ\n",
+    "price": 7000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/8-hoadon/Biên nhận 1 liên – 10.5 x 19 cm ( 50 tờ ).jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "697df3224a7cededa00a2169" },
+    "name": "Hoá đơn bán lẻ 1 liên – 40 tờ – 12.5×18.5 cm",
+    "sku": "TL08-37",
+    "category_id": { "$oid": "6924066627f5cc030ceca999" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Hóa đơn bán lẻ được sử dụng phổ biến đối với các dịch vụ bán lẻ như quán ăn, Shop quần áo, cửa hàng tạp hóa,…\n\nViệc sử dụng hóa đơn không chỉ là hoạt động bắt buộc trong kinh doanh mà còn giúp doanh nghiệp kiểm soát thu chi hiệu quả\n\nKích thước : 12.5 x 18.5 cm\n\nSố tờ : 40 tờ\n\nQuy cách 1 liên",
+    "price": 5000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/8-hoadon/Hoá đơn bán lẻ 1 liên – 40 tờ – 12.5×18.5 cm.jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "697df33e4a7cededa00a216a" },
+    "name": "Phiếu giữ xe – 100 tờ – 6×15 cm",
+    "sku": "TL08-38",
+    "category_id": { "$oid": "6924066627f5cc030ceca999" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Sản phẩm dùng để ghi chú giữ xe ra vào bãi tại các công ty.\n\nDễ sử dụng, cầm nắm, mang theo bên người\n\nLà mặt hàng thông dụng được nhiều khách hàng ưa chuộng\n\nMẫu mã đẹp, giấy trắng mịn, giấy ford có độ bám mực tốt, không bị lem\n\nQuy cách: 1 liên trắng\n\nKích thước : 6×15 cm, 100 tờ",
+    "price": 6000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/8-hoadon/Phiếu giữ xe – 100 tờ – 6×15 cm.jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "697df3624a7cededa00a216b" },
+    "name": "Phiếu thu 1 liên – 12.5×18.5 cm ( 40 tờ)",
+    "sku": "TL08-39",
+    "category_id": { "$oid": "6924066627f5cc030ceca999" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Tên sản phẩm: Phiếu thu 1 liên – 50 tờ – 12.5×18.5 cm\n\nQuy cách 1 liên : trắng\n\nKích thước : 12.5×18.5 cm\n\nSố tờ : 40 tờ\n\nMẫu số : C40-BB (Ba hành kèm theo thông tư số 107/2017/TT-BTC ngày 10/10/2017 của Bộ Tài Chính)",
+    "price": 5000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/8-hoadon/Phiếu thu 1 liên – 12.5×18.5 cm ( 40 tờ).jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "697df3914a7cededa00a216c" },
+    "name": "Phiếu xuất kho 3 liên – 12.5 x 18.5 cm ( 90 tờ )",
+    "sku": "TL08-40",
+    "category_id": { "$oid": "6924066627f5cc030ceca999" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Phiếu xuất kho 3 liên : trắng ,vàng , hồng\n\nKích thước : 12.5 x 18.5 cm\n\nSố tờ : 90 tờ",
+    "price": 15000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/8-hoadon/Phiếu xuất kho 3 liên – 12.5 x 18.5 cm ( 90 tờ ).jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "697df3e24a7cededa00a216f" },
+    "name": "Giấy in A4 Double A 70gsm / 80gsm – Thái Lan Chính Hãng (500 tờ)",
+    "sku": "TL08-41",
+    "category_id": { "$oid": "6924066627f5cc030ceca99a" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Kích thước giấy: 210 x 297 mm\n\nĐịnh lượng: 70gsm / 80gsm\n\nThương hiệu: Paperline\n\nMàu sắc: trắng\n\nXuất xứ:Indonesia\n\nQuy cách đóng gói: 5 ream/ thùng\n\nƯu điểm: giấy trắng mịn, bề mặt mượt, in bám đều mực cho bản in rõ nét\n\nỨng dụng: photocopy, in văn vản, tài liệu, hợp đồng…chuyên sử dụng tại văn phòng, trường học, cơ quan, xí nghiệp…",
+    "price": 300000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/9-GiayCacLoai/Giấy in A4 Double A 70gsm - 80gsm – Thái Lan Chính Hãng (500 tờ).jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "697df41a4a7cededa00a2170" },
+    "name": "Thùng 5 ram Giấy in A3 Double A 70gsm / 80gsm – Thái Lan (500 tờ) – Chính hãng",
+    "sku": "TL08-42",
+    "category_id": { "$oid": "6924066627f5cc030ceca99a" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Kích thước : A3\n\nĐịnh lượng : 70 gsm , 80 gsm\n\nGiấy có độ trắng sáng cao, độ trắng từ 86 trở nên\n\nBề mặt trơn nhẵn, mịn, có độ bám mực tốt.\n\nKhông có bụi giấy trên bề mặt tránh bị kẹt giấy trong quá trình in.\n\nDouble A là nhãn hiệu giấy in photo cao cấp, chất lượng giấy rất tốt, có những ưu điểm về độ trắng sáng, độ sắc nét trong in ấn.\n\nGiấy in A3 Double A 70gsm, 80gsm có kích thước khổ A3, giấy có độ dày phù hợp với các dòng máy in photo hiện đại.",
+    "price": 830000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/9-GiayCacLoai/Thùng 5 ram Giấy in A3 Double A 70gsm - 80gsm – Thái Lan (500 tờ) – Chính hãng.jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "697df4464a7cededa00a2171" },
+    "name": "Thùng 10 ram Giấy in IK Plus 70gsm khổ A5 – 500 tờ",
+    "sku": "TL08-43",
+    "category_id": { "$oid": "6924066627f5cc030ceca99a" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Kích thước : A4\n\nĐịnh lượng : 70 gsm\n\nQuy cách : 500 tờ / ram\n\nGiấy in IK Plus 70gsm (500 tờ) khổ in A4 và A5lý tưởng để in các loại giấy in chuyên dụng, hóa đơn công ty…\n\nGiấy nổi trội về độ trắng, bề mặt mịn và thân thiện với môi trường.\n\nBám mực tốt, không lem và hạn chế kẹt giấy.\n\nĐộ trắng sáng tiêu chuẩn, mịn và bám màu mực tốt.\n\nGiấy dùng cho các loại máy in,máy fax và máy photocopy có hỗ trợ khổ giấy A5.\n\nGiấy in IK Plus giúp máy chạy ổn định, hạn chế tối đa kẹt giấy.\n\nGiấy in chất lượng cao nhập khẩu từ Indonesia, không chứa độc tố hay mùi khó chịu.\n\nHoàn toàn thân thiện với môi trường và an toàn cho sức khỏe.\n\nGiấy in IK Plus 70gsm  A5 là loại giấy phổ biến đối với hoạt động in ấn tại nhà và văn phòng, nhất là khi in, photo các loại tài liệu học tập, hội họp, đơn từ…",
+    "price": 350000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/9-GiayCacLoai/Thùng 10 ram Giấy in IK Plus 70gsm khổ A5 – 500 tờ.jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "697df4a04a7cededa00a2172" },
+    "name": "Máy tính Casio AX-120B ( chính hãng bảo hành 7 năm)",
+    "sku": "TL08-44",
+    "category_id": { "$oid": "6924066627f5cc030ceca99c" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Kích thước (Dài × Rộng × Dày) : 178,5 × 107 × 26,1 mm\n\nMáy gồm 12 chữ số\n\nPhần trăm thông thường: Các tính toán phần trăm thông thường.\n\nMáy được sử dụng nguồn hai chiều (Mặt trời + Pin): Chế độ sử dụng năng lượng mặt trời được bật khi đủ sáng, chế độ pin được bật khi không đủ sáng.\n\nNhấn đồng thời phím: Các thao tác phím được lưu trữ trong bộ nhớ đệm, nhờ vậy sẽ không bị mất dữ liệu ngay cả khi nhập số với tốc độ cao.\n\nMàn hình cực lớn: Màn hình lớn hơn giúp đọc nhiều dữ liệu dễ dàng hơn.\n\nCác phím dẻo: Được thiết kế và chế tạo để dễ dàng sử dụng trong các thao tác.\n\nBề mặt kim loại bền: Vỏ bền chịu được va đập mạnh.",
+    "price": 350000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/10-Maytinh/Máy tính Casio AX-120B ( chính hãng bảo hành 7 năm).jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "697df4e04a7cededa00a2173" },
+    "name": "Máy tính CASIO JF-120FM",
+    "sku": "TL08-45",
+    "category_id": { "$oid": "6924066627f5cc030ceca99c" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Máy tính Casio JF-120FM – Chính hãng Casio – Bảo hành 7 năm\n\nKích thước (Dài x Rộng x Cao) : 148,5 x 101 x 27,6mm\n\nChức năng tính thuế : Tự động tính giá đã cộng thuế, chiết khấu, giá bán, tiền thuế, số tiền chiết khấu…\n\nTính chi phí/ giá bán / lợi nhuận : Tính chi phí, giá bán hoặc tỷ suất lợi nhuận của một mặt hàng\n\nHai nguồn năng lượng : Chế độ sử dụng năng lượng mặt trời được bật khi đủ sáng, chế độ pin được bật khi không đủ sáng.\n\nCác biểu tượng lệnh hàm : Ký hiệu (+,-,x,÷) trên màn hình cho biết trạng thái của thao tác đang thực hiện\n\nNhấn đồng thời phím : Các thao tác phím được lưu trữ trong bộ nhớ đệm, nhờ vậy sẽ không bị mất dữ liệu ngay cả khi nhập với tốc độ cao.\n\nMàn hình lớn : Màn hình lớn hơn giúp dễ nhìn hơn, hiển thị được nhiều dữ liệu hơn\n\nPhím nhựa : Các phím bấm được thiết kế để dễ dàng sử dụng\n\nTính tỷ lệ phần trăm lợi nhuận : Phím “%” cho phép tính nhanh giá và lợi nhuận, đồng thời bổ sung tính năng tính giảm giá, tính tỷ lệ và tính giá trị tăng / giảm.\n\nBề mặt kim loại sang trọng, bền chắc.",
+    "price": 390000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/10-Maytinh/Máy tính CASIO JF-120FM.jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "697df5274a7cededa00a2174" },
+    "name": "Máy Tính Casio MX-120B",
+    "sku": "TL08-46",
+    "category_id": { "$oid": "6924066627f5cc030ceca99c" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Thương hiệu : Casio\n\nThời hạn bảo hành : 7 năm\n\nMàn hình lớn hơn giúp đọc nhiều dữ liệu dễ dàng hơn.\n\nMáy sử dụng 2 nguồn năng lượng (Mặt trời + Pin)\n\nChế độ sử dụng năng lượng mặt trời được bật khi đủ sáng.\n\nNhấn đồng thời phím Các thao tác phím được lưu trữ trong bộ nhớ đệm, nhờ vậy sẽ không bị mất dữ liệu ngay cả khi nhập với tốc độ cao.\n\nCác phím dẻo được thiết kế và chế tạo để dễ dàng thao tác.\n\nBề mặt kim loại bền. Vỏ bền chịu được va đập mạnh.\n\nTính phần trăm thông thường.",
+    "price": 260000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/10-Maytinh/Máy Tính Casio MX-120B.jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "697df57f4a7cededa00a2177" },
+    "name": "Máy tính Double A DC-11",
+    "sku": "TL08-47",
+    "category_id": { "$oid": "6924066627f5cc030ceca99c" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Thương hiệu : Double A\n\nBảo hành : 12 tháng\n\nMàn hình cong hướng tầm mắt giúp người dùng dễ đọc số.\n\nMàn hình hiển thị số lớn hơn để người dùng dễ đọc.\n\nCó chức năng lựa chọn làm tròn số thập phân.\n\nMiếng đệm cao su trên đế của máy tính ngăn bị trượt trong quá trình sử dụng\n\nBàn phím được thiết kế lớn và êm hơn giúp người dùng bấm máy tính nhẹ nhàng và chính xác hơn",
+    "price": 125000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/10-Maytinh/Máy tính Double A DC-11.jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "697df5a24a7cededa00a2178" },
+    "name": "Vỉ 4 viên pin Maxell AA (2A)",
+    "sku": "TL08-48",
+    "category_id": { "$oid": "6924066627f5cc030ceca99c" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Pin Maxell AA đến từ thương hiệu uy tín nhiều năm trên thị trường\n\nĐảm bảo thời lượng pin dài nhất, hiệu suất cao và an toàn cho mọi thiết bị của bạn.\n\nĐiện áp 1.5V, pin phù hợp các thiết bị phổ biến như máy nghe nhạc, đèn pin, đồ chơi, chuột không dây…\n\nLoai pin rất chất lượng so với giá cả\n\nLà loại Pin thông dụng nhất trên thị trường sử dụng hầu hết các thiết bị như: Chuột máy tính, đồng hồ, điều khiển, đồ chơi.",
+    "price": 15000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/10-Maytinh/Vỉ 4 viên pin Maxell AA (2A).jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "697df91c4a7cededa00a2179" },
+    "name": "Giấy in cao cấp PaperOne All Purpose A4 70gsm / 80 gsm",
+    "sku": "TL08-49",
+    "category_id": { "$oid": "6924066627f5cc030ceca99a" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Kích thước giấy: 210 x 297 mm\n\nĐịnh lượng: 70gsm / 80gsm\n\nThương hiệu: Paperline\n\nMàu sắc: trắng\n\nXuất xứ:Indonesia\n\nQuy cách đóng gói: 5 ream/ thùng\n\nƯu điểm: giấy trắng mịn, bề mặt mượt, in bám đều mực cho bản in rõ nét\n\nỨng dụng: photocopy, in văn vản, tài liệu, hợp đồng…chuyên sử dụng tại văn phòng, trường học, cơ quan, xí nghiệp…",
+    "price": 380000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/9-GiayCacLoai/Giấy in cao cấp PaperOne All Purpose A4 70gsm - 80 gsm.jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "697df94e4a7cededa00a217a" },
+    "name": "Giấy in cao cấp PaperOne All Purpose A4 70gsm / 80 gsm",
+    "sku": "TL08-50",
+    "category_id": { "$oid": "6924066627f5cc030ceca99a" },
+    "supplier_id": { "$oid": "6924084f27f5cc030ceca9a1" },
+    "description": "Thương hiệu : Paper One\n\nKích thước : A4\n\nQuy cách : 500 tờ / ream\n\nPaperOne™ All Purpose Premium là sản phẩm giấy văn phòng cao cấp với chất lượng tuyệt hảo, thích hợp cho tất cả các loại máy in và máy photocopy hiện đại với hiệu quả in cao nhất.Mặt giấy láng, mịn khả năng in tuyệt vời với độ nhạy cao. Đảm bảo chất lượng in tốt nhất cho các tài liệu của bạn.\n\nCông nghệ mới này làm giấy trông mỏng nhưng thực tế giấy đã được nén chặt hơn, làm bề mặt của giấy nhẵn, đều hơn, giúp bạn có thể in ấn hoặc photocopy cả hai mặt mà không bị nhăn, cong giấy hay mực bị lem, thấm ngược, không tạo ra bụi giấy.\n\nGiấy thích hợp cho nhiều loại máy văn phòng",
+    "price": 84000,
+    "discount_percent": 10,
+    "status": 1,
+    "images": "images/9-GiayCacLoai/THÙNG 5 RAM Giấy A4 PAPERLINE định lượng 70gsm-80gsm.jpg",
+    "stock": 120,
+    "created_at": { "$date": "2025-01-01T00:00:00.000Z" }
   }
-},
-{
-  "_id": {
-    "$oid": "6924119d27f5cc030ceca9e7"
-  },
-  "name": "Bìa Còng Nhẫn A4 – 20mm",
-  "sku": "TL08",
-  "category_id": {
-    "$oid": "692403df27f5cc030ceca98b"
-  },
-  "supplier_id": {
-    "$oid": "6924084f27f5cc030ceca9a1"
-  },
-  "description": " Thiết kế vừa vặn, hiện đại Kích thước vừa phải giúp giấy tờ được giữ gọn gàng, không bị nhăn, Có thể đóng mở nhiều lần để thêm bớt tài liệu mà không bị cong vênh. Sản phẩm có kích thước vừa phải, phù hợp với đa số các loại giấy tờ hiện nay.",
-  "price": 25000,
-  "discount_percent": 10,
-  "status": 1,
-  "images": "\/images\/1-Bia\/Bìa Còng Nhẫn A4 – 20mm.jpg",
-  "stock": 120,
-  "created_at": {
-    "$date": "2025-01-01T00:00:00.000Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "692414c827f5cc030ceca9e8"
-  },
-  "name": "Bìa hộp đựng hồ sơ tài liệu ERAS",
-  "sku": "TL08",
-  "category_id": {
-    "$oid": "692403df27f5cc030ceca98b"
-  },
-  "supplier_id": {
-    "$oid": "6924084f27f5cc030ceca9a1"
-  },
-  "description": "Sản phẩm được làm từ nhựa PP có độ bền cao, không độc hại, thân thiện môi trường. Cấu tạo tiện lợi dễ sử dụng, luôn giữ hồ sơ, tài liệu phẵng phiu, sạch sẽ và tạo cảm giác thoải mái và dễ dàng khi sử dụng. Thiết kế màu sắc trang nhã lịch sự hiện đại sang trọng phù hợp với môi trường văn phòng",
-  "price": 90000,
-  "discount_percent": 10,
-  "status": 1,
-  "images": "[object Object],[object Object]",
-  "stock": 120,
-  "created_at": {
-    "$date": "2025-01-01T00:00:00.000Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "6924175d27f5cc030ceca9e9"
-  },
-  "name": "Bìa lỗ A4 – 600g ",
-  "sku": "TL08",
-  "category_id": {
-    "$oid": "692403df27f5cc030ceca98b"
-  },
-  "supplier_id": {
-    "$oid": "6924084f27f5cc030ceca9a1"
-  },
-  "description": "Sản phẩm được làm bằng nhựa trong suốt gồm 11 lỗ nằm bên mép trái giúp lưu trữ chứng từ các khổ từ A4 trở xuống một cách dễ dàng. Chất lượng sản phẩm: mẫu mã đẹp, chất liệu nhựa tốt, độ dày cao. Quy cách: khổ A4 (24x31cm). 100 lá/1 xấp",
-  "price": 65000,
-  "discount_percent": 10,
-  "status": 1,
-  "images": "[object Object],[object Object]",
-  "stock": 120,
-  "created_at": {
-    "$date": "2025-01-01T00:00:00.000Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "692417db27f5cc030ceca9ea"
-  },
-  "name": "Bìa 20 Lá/ 40 Lá/60 Lá/80 lá Thiên Long, Bìa Nhựa Nhiều Lá Khổ A4",
-  "sku": "TL08",
-  "category_id": {
-    "$oid": "692403df27f5cc030ceca98b"
-  },
-  "supplier_id": {
-    "$oid": "6924084f27f5cc030ceca9a1"
-  },
-  "description": "Bìa giúp giữ giấy tờ được sạch sẽ, phù hợp với khổ giấy A4. Bạn có thể chứa đựng các tài liệu, hồ sơ, báo cáo, tranh ảnh, tạp chí. Gíup bảo quản hồ sơ được phẳng, sạch sẽ và dễ dàng sử dụng.",
-  "price": 75000,
-  "discount_percent": 10,
-  "status": 1,
-  "images": "[object Object],[object Object]",
-  "stock": 120,
-  "created_at": {
-    "$date": "2025-01-01T00:00:00.000Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "6924187627f5cc030ceca9eb"
-  },
-  "name": "Bút ký Uni- Ball UB150 ( Loại 2)",
-  "sku": "TL08",
-  "category_id": {
-    "$oid": "6924049527f5cc030ceca993"
-  },
-  "supplier_id": {
-    "$oid": "6924084f27f5cc030ceca9a1"
-  },
-  "description": "Màu mực viết: xanh, Thân và nắp thiết kế thanh nhã, đi cùng màu mực. Màu mực tươi sáng, thấm nước không nhòe. Ngòi bút 0.5mm bằng hợp kim",
-  "price": 15000,
-  "discount_percent": 10,
-  "status": 1,
-  "images": "[object Object],[object Object]",
-  "stock": 120,
-  "created_at": {
-    "$date": "2025-01-01T00:00:00.000Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "6924191627f5cc030ceca9ee"
-  },
-  "name": "Bút ký Uni-ball UB150 – CHÍNH HÃNG",
-  "sku": "TL08",
-  "category_id": {
-    "$oid": "6924049527f5cc030ceca993"
-  },
-  "supplier_id": {
-    "$oid": "6924084f27f5cc030ceca9a1"
-  },
-  "description": "Bút bi nước Uni-ball eye Micro UB150 nắp đậy, bút viết màu không màu xanh tươi sáng, không lem mực, không nhòe khi gặp nước. Màu mực viết: xanh Thân và nắp thiết kế thanh nhã, đi cùng màu mực. Màu mực tươi sáng, thấm nước không nhòe. Đầu bi Ø 0.5mm bằng hợp kim",
-  "price": 40000,
-  "discount_percent": 10,
-  "status": 1,
-  "images": "[object Object],[object Object]",
-  "stock": 120,
-  "created_at": {
-    "$date": "2025-01-01T00:00:00.000Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "692419ac27f5cc030ceca9ef"
-  },
-  "name": "Bút ký tên ZEBRA F301 loại 1 (Mực xanh)",
-  "sku": "TL08",
-  "category_id": {
-    "$oid": "6924049527f5cc030ceca993"
-  },
-  "supplier_id": {
-    "$oid": "6924084f27f5cc030ceca9a1"
-  },
-  "description": "Bút ký tên ZEBRA F.301 loại 1 được đánh giá cao về thiết kế và kiểu dáng. Sự phối hợp tinh tế giữa chất liệu kim loại sáng bóng và lớp bọc nhựa đồng màu với mực giúp tăng thêm phần nổi bật cho bút. Bút dạng bấm tiện lợi, sử dụng linh hoạt và tiện cho việc cất giữ. Phần tay cầm bọc nhựa êm và tránh trơn tuột ngay cả khi tay ra nhiều mồ hôi",
-  "price": 39000,
-  "discount_percent": 10,
-  "status": 1,
-  "images": "[object Object],[object Object]",
-  "stock": 120,
-  "created_at": {
-    "$date": "2025-01-01T00:00:00.000Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "692419ec27f5cc030ceca9f0"
-  },
-  "name": "Bút Ký VB 1061 BS – Tặng kèm ruột bút",
-  "sku": "TL08",
-  "category_id": {
-    "$oid": "6924049527f5cc030ceca993"
-  },
-  "supplier_id": {
-    "$oid": "6924084f27f5cc030ceca9a1"
-  },
-  "description": "Chất liệu : thép không gỉ, Ngòi bi, màu mực  Xanh. Phụ kiện kèm theo : Hộp Bút Enus Pen",
-  "price": 190000,
-  "discount_percent": 10,
-  "status": 1,
-  "images": "[object Object],[object Object]",
-  "stock": 120,
-  "created_at": {
-    "$date": "2025-01-01T00:00:00.000Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "69241a8427f5cc030ceca9f1"
-  },
-  "name": "Bút Ký VR 2301 BK – Tặng kèm ruột bút",
-  "sku": "TL08",
-  "category_id": {
-    "$oid": "6924049527f5cc030ceca993"
-  },
-  "supplier_id": {
-    "$oid": "6924084f27f5cc030ceca9a1"
-  },
-  "description": "Chất liệu : thép không gỉ, Ngòi bi, màu mực  Xanh. Phụ kiện kèm theo : Hộp Bút Enus Pen",
-  "price": 190000,
-  "discount_percent": 10,
-  "status": 1,
-  "images": "[object Object],[object Object]",
-  "stock": 120,
-  "created_at": {
-    "$date": "2025-01-01T00:00:00.000Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "69241edd27f5cc030ceca9f2"
-  },
-  "name": "Bút bi Double A – ALPINE BALL 0.7mm – Mực xanh (DBP-507-BG)",
-  "sku": "TL08",
-  "category_id": {
-    "$oid": "692404a027f5cc030ceca994"
-  },
-  "supplier_id": {
-    "$oid": "6924084f27f5cc030ceca9a1"
-  },
-  "description": "Bút bi Double A – ALPINE BALL 0.7mm – Mực xanh (DBP-507-BG)",
-  "price": 4000,
-  "discount_percent": 10,
-  "status": 1,
-  "images": "[object Object],[object Object]",
-  "stock": 120,
-  "created_at": {
-    "$date": "2025-01-01T00:00:00.000Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "69241f8027f5cc030ceca9f9"
-  },
-  "name": "Ruột bút xoá kéo PLUS",
-  "sku": "TL08",
-  "category_id": {
-    "$oid": "692404a027f5cc030ceca994"
-  },
-  "supplier_id": {
-    "$oid": "6924084f27f5cc030ceca9a1"
-  },
-  "description": "CÁCH THAY THẾ RUỘT XOÁ: +Đẩy khoá trượt về chữ OPEN trên vỏ bút xoá để mở phần nắp nhựa +Lấy ruột băng xoá đã sử dụng ra. +Lau sạch vỏ băng xoá +Lắp ruột băng xoá mới vào +Đóng chặt nắp nhựa khớp với các chốt ở thân vỏ , đẩy khoá trượt về chữ LOCK. Ruột xoá kéo PLUS CÓ thiết kế nhỏ gọn, kiểu dáng phù hợp dùng cho loại bút xoá kéo Plus",
-  "price": 20000,
-  "discount_percent": 10,
-  "status": 1,
-  "images": "[object Object],[object Object]",
-  "stock": 120,
-  "created_at": {
-    "$date": "2025-01-01T00:00:00.000Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "6924200f27f5cc030ceca9fa"
-  },
-  "name": "Hộp 20 Bút Bi Thiên Long TL036",
-  "sku": "TL08",
-  "category_id": {
-    "$oid": "692404a027f5cc030ceca994"
-  },
-  "supplier_id": {
-    "$oid": "6924084f27f5cc030ceca9a1"
-  },
-  "description": "Thân bút làm từ nhựa màu đục. Tai cài bút bằng kim loại mạ crom sáng bóng. Thân bút có đệm mềm giúp cầm êm tay và giảm trơn trượt khi viết. Thiết kế trẻ trung kiểu dáng mạnh mẽ",
-  "price": 220000,
-  "discount_percent": 10,
-  "status": 1,
-  "images": "[object Object],[object Object]",
-  "stock": 120,
-  "created_at": {
-    "$date": "2025-01-01T00:00:00.000Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "692420a927f5cc030ceca9fb"
-  },
-  "name": "Bút Bi Thiên Long TL-031",
-  "sku": "TL08",
-  "category_id": {
-    "$oid": "692404a027f5cc030ceca994"
-  },
-  "supplier_id": {
-    "$oid": "6924084f27f5cc030ceca9a1"
-  },
-  "description": "Giắt bút vòng bằng kim loại, nút xi kim loai sáng bóng.Độ dài viết được: 1.400-1.800m.Đầu bi nhỏ cho nét chữ thanh mảnh.Kiểu dáng  rất hiện đại, sang trọng phù hợp cho sinh viên,giáo viên và nhân viên văn phòng. Màu Mực: xanh",
-  "price": 9000,
-  "discount_percent": 10,
-  "status": 1,
-  "images": "[object Object],[object Object]",
-  "stock": 120,
-  "created_at": {
-    "$date": "2025-01-01T00:00:00.000Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "692420bd27f5cc030ceca9fc"
-  },
-  "name": "Bút bi Thiên Long TL-095 ngòi 0.5mm – Mực xanh",
-  "sku": "TL08",
-  "category_id": {
-    "$oid": "692404a027f5cc030ceca994"
-  },
-  "supplier_id": {
-    "$oid": "6924084f27f5cc030ceca9a1"
-  },
-  "description": "Bút tự động thu ngòi khi cài vào túi áo. Có thể cài vào bìa sổ dày 3 mm. Bút bi dạng bấm cò, đầu bi nhỏ cho nét chữ thanh mảnh. Viết rất trơn, êm, mực ra đều, liên tục. Kiểu dáng hiện đại, phần tay cầm có đệm cao su mềm giúp cầm bút rất thoải mái. Đóng gói: 20 cây/ hộp. Bảo quản: Không thích hợp cho trẻ dưới 3 tuổi. Bảo quản nơi khô ráo, thoáng mát, tuyệt đối tránh xa nguồn nhiệt, hóa chất.",
-  "price": 8000,
-  "discount_percent": 10,
-  "status": 1,
-  "images": "[object Object],[object Object]",
-  "stock": 120,
-  "created_at": {
-    "$date": "2025-01-01T00:00:00.000Z"
-  }
-}]
+]

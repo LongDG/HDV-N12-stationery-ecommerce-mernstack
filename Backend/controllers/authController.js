@@ -49,7 +49,8 @@ exports.register = async (req, res) => {
       user: {
         id: user._id,
         name: user.name,
-        email: user.email
+        email: user.email,
+        role_id: user.role_id || user.role || 'customer'
       }
     });
   } catch (error) {
@@ -66,10 +67,21 @@ exports.register = async (req, res) => {
 // @access  Public
 exports.login = async (req, res) => {
   try {
-    const { email, password } = req.body;
+    console.log('=== LOGIN REQUEST DEBUG ===');
+    console.log('Request Content-Type:', req.headers['content-type']);
+    console.log('Request body type:', typeof req.body);
+    console.log('Request body:', req.body);
+    
+    // Sử dụng body đã được parse
+    const requestBody = req.body;
+    console.log('Using body:', requestBody);
+    console.log('=== END DEBUG ===');
+    
+    const { email, password } = requestBody;
 
     // Kiểm tra dữ liệu đầu vào
     if (!email || !password) {
+      console.log('Missing email or password:', { email, password });
       return res.status(400).json({
         success: false,
         message: 'Vui lòng nhập email và mật khẩu'
@@ -86,8 +98,38 @@ exports.login = async (req, res) => {
       });
     }
 
-    // Kiểm tra password
-    const isMatch = await user.matchPassword(password);
+    console.log('=== USER FROM DB DEBUG ===');
+    console.log('User object:', user);
+    console.log('user.role:', user.role);
+    console.log('user.role_id:', user.role_id);
+    console.log('=== END USER DEBUG ===');
+
+    // Kiểm tra password - xử lý cả plain text và hashed password
+    let isMatch = false;
+    
+    try {
+      // Thử so sánh với bcrypt trước
+      isMatch = await user.matchPassword(password);
+    } catch (error) {
+      // Nếu lỗi bcrypt, có thể là plain text password từ database cũ
+      console.log('Bcrypt compare failed, checking plain text...');
+    }
+    
+    // Nếu bcrypt fail, thử plain text
+    if (!isMatch) {
+      isMatch = (user.password === password);
+      
+      // Nếu plain text password đúng, hash lại và lưu
+      if (isMatch) {
+        console.log('Plain text password matched, updating to hashed password');
+        user.password = password; // Sẽ được hash bởi pre-save middleware
+        try {
+          await user.save();
+        } catch (saveError) {
+          console.error('Error saving hashed password:', saveError);
+        }
+      }
+    }
 
     if (!isMatch) {
       return res.status(401).json({
@@ -106,10 +148,12 @@ exports.login = async (req, res) => {
       user: {
         id: user._id,
         name: user.name,
-        email: user.email
+        email: user.email,
+        role_id: user.role_id || user.role || 'customer' // Try both role_id and role
       }
     });
   } catch (error) {
+    console.error('Login error:', error);
     res.status(500).json({
       success: false,
       message: 'Lỗi server',
@@ -130,7 +174,8 @@ exports.getMe = async (req, res) => {
       user: {
         id: user._id,
         name: user.name,
-        email: user.email
+        email: user.email,
+        role_id: user.role_id || user.role || 'customer'
       }
     });
   } catch (error) {
@@ -142,3 +187,139 @@ exports.getMe = async (req, res) => {
   }
 };
 
+// @desc    Lấy danh sách tất cả người dùng
+// @route   GET /api/auth/users
+// @access  Public
+exports.getAllUsers = async (req, res) => {
+  try {
+    const users = await User.find().select('-password');
+    
+    res.status(200).json({
+      success: true,
+      count: users.length,
+      data: users
+    });
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: 'Lỗi server',
+      error: error.message
+    });
+  }
+};
+
+// @desc    Lấy thông tin người dùng theo ID
+// @route   GET /api/auth/users/:id
+// @access  Public
+exports.getUserById = async (req, res) => {
+  try {
+    const user = await User.findById(req.params.id).select('-password');
+    
+    if (!user) {
+      return res.status(404).json({
+        success: false,
+        message: 'Không tìm thấy người dùng'
+      });
+    }
+    
+    res.status(200).json({
+      success: true,
+      data: user
+    });
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: 'Lỗi server',
+      error: error.message
+    });
+  }
+};
+
+// @desc    Cập nhật thông tin người dùng
+// @route   PUT /api/auth/users/:id
+// @access  Public
+exports.updateUser = async (req, res) => {
+  try {
+    const { password, ...updateData } = req.body;
+    
+    const user = await User.findByIdAndUpdate(
+      req.params.id,
+      updateData,
+      {
+        new: true,
+        runValidators: true
+      }
+    ).select('-password');
+    
+    if (!user) {
+      return res.status(404).json({
+        success: false,
+        message: 'Không tìm thấy người dùng'
+      });
+    }
+    
+    res.status(200).json({
+      success: true,
+      data: user
+    });
+  } catch (error) {
+    res.status(400).json({
+      success: false,
+      message: 'Lỗi cập nhật',
+      error: error.message
+    });
+  }
+};
+
+// @desc    Xóa người dùng
+// @route   DELETE /api/auth/users/:id
+// @access  Public
+exports.deleteUser = async (req, res) => {
+  try {
+    const user = await User.findByIdAndDelete(req.params.id);
+    
+    if (!user) {
+      return res.status(404).json({
+        success: false,
+        message: 'Không tìm thấy người dùng'
+      });
+    }
+    
+    res.status(200).json({
+      success: true,
+      message: 'Đã xóa người dùng thành công'
+    });
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: 'Lỗi server',
+      error: error.message
+    });
+  }
+};
+
+// @desc    Thống kê users cho admin
+// @route   GET /api/users/stats
+// @access  Public
+exports.getUserStats = async (req, res) => {
+  try {
+    const totalUsers = await User.countDocuments();
+    const adminUsers = await User.countDocuments({ role: 'admin' });
+    const customerUsers = await User.countDocuments({ role: 'customer' });
+    
+    res.status(200).json({
+      success: true,
+      data: {
+        count: totalUsers,
+        admin: adminUsers,
+        customer: customerUsers
+      }
+    });
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: 'Lỗi server',
+      error: error.message
+    });
+  }
+};

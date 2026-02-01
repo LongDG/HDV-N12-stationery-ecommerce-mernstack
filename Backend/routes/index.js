@@ -3,13 +3,31 @@ const router = express.Router();
 
 // Import routes
 const authRoutes = require('./authRoutes');
-// const userRoutes = require('./userRoutes');
-// const productRoutes = require('./productRoutes');
+const productRoutes = require('./productRoutes');
+const categoryRoutes = require('./categoryRoutes');
+const orderRoutes = require('./orderRoutes');
+const statisticsRoutes = require('./statisticsRoutes');
+const supplierRoutes = require('./supplierRoutes');
+const inventoryRoutes = require('./inventoryRoutes');
+const paymentRoutes = require('./paymentRoutes');
+const cartRoutes = require('./cartRoutes');
+const adminRoutes = require('./adminRoutes');
+const userRoutes = require('./userRoutes');
+const contactRoutes = require('./contactRoutes');
 
 // Use routes
 router.use('/auth', authRoutes);
-// router.use('/users', userRoutes);
-// router.use('/products', productRoutes);
+router.use('/users', userRoutes);
+router.use('/products', productRoutes);
+router.use('/categories', categoryRoutes);
+router.use('/orders', orderRoutes);
+router.use('/statistics', statisticsRoutes);
+router.use('/suppliers', supplierRoutes);
+router.use('/inventories', inventoryRoutes);
+router.use('/payments', paymentRoutes);
+router.use('/cart', cartRoutes);
+router.use('/admin', adminRoutes);
+router.use('/contact', contactRoutes);
 
 // Test route
 router.get('/test', (req, res) => {

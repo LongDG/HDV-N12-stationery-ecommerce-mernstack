@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Login</title>
+</head>
+<body>
+    <h1>Test Login Form</h1>
+    <div id="result"></div>
+    
+    <script>
+        async function testLogin() {
+            try {
+                const response = await fetch('http://localhost:5000/api/auth/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        email: 'khoa@gmail.com',
+                        password: '123456'
+                    })
+                });
+                
+                const data = await response.json();
+                document.getElementById('result').innerHTML = 
+                    '<h3>Login Test Result:</h3>' +
+                    '<pre>' + JSON.stringify(data, null, 2) + '</pre>' +
+                    '<p>Status: ' + response.status + '</p>';
+                    
+            } catch (error) {
+                document.getElementById('result').innerHTML = 
+                    '<h3>Error:</h3><p>' + error.message + '</p>';
+            }
+        }
+        
+        // Auto test on page load
+        testLogin();
+    </script>
+</body>
+</html>

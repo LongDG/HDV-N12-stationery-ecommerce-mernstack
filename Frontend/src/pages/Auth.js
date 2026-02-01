@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import { AuthContext } from '../context/AuthContext';
 import './Auth.css';
 
 const Auth = () => {
   const navigate = useNavigate();
+  const { login, register, user } = useContext(AuthContext);
   const [isLogin, setIsLogin] = useState(true);
   const [formData, setFormData] = useState({
     name: '',
@@ -17,11 +18,10 @@ const Auth = () => {
 
   useEffect(() => {
     // Kiểm tra nếu đã đăng nhập thì redirect về trang chủ
-    const token = localStorage.getItem('token');
-    if (token) {
+    if (user) {
       navigate('/');
     }
-  }, [navigate]);
+  }, [user, navigate]);
 
   const handleChange = (e) => {
     setFormData({
@@ -50,19 +50,18 @@ const Auth = () => {
     if (isLogin) {
       // Đăng nhập
       try {
-        const response = await axios.post('/api/auth/login', {
+        const result = await login({
           email: formData.email,
           password: formData.password
         });
         
-        if (response.data.success) {
-          localStorage.setItem('token', response.data.token);
-          localStorage.setItem('user', JSON.stringify(response.data.user));
+        if (result.success) {
           navigate('/');
-          window.location.reload();
+        } else {
+          setError(result.message || 'Đăng nhập thất bại');
         }
       } catch (err) {
-        setError(err.response?.data?.message || 'Đăng nhập thất bại. Vui lòng thử lại!');
+        setError('Đăng nhập thất bại. Vui lòng thử lại!');
       } finally {
         setLoading(false);
       }
@@ -82,16 +81,15 @@ const Auth = () => {
 
       try {
         const { confirmPassword, ...registerData } = formData;
-        const response = await axios.post('/api/auth/register', registerData);
+        const result = await register(registerData);
         
-        if (response.data.success) {
-          localStorage.setItem('token', response.data.token);
-          localStorage.setItem('user', JSON.stringify(response.data.user));
+        if (result.success) {
           navigate('/');
-          window.location.reload();
+        } else {
+          setError(result.message || 'Đăng ký thất bại');
         }
       } catch (err) {
-        setError(err.response?.data?.message || 'Đăng ký thất bại. Vui lòng thử lại!');
+        setError('Đăng ký thất bại. Vui lòng thử lại!');
       } finally {
         setLoading(false);
       }
